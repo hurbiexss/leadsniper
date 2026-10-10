@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lead Sniper — Be the first mover to answer</title>
-<meta name="description" content="Lead Sniper spots every moving request in your Facebook groups — English & Québec French — and writes the reply for you. With Pro, it posts it while you're on a job.">
+<title>Lead Sniper — Be the first to answer</title>
+<meta name="description" content="Lead Sniper spots every request for your services in your Facebook groups — moving, cleaning, plumbing, snow removal and 16 more, in English &amp; Québec French — and writes the reply. With Pro, it posts it while you’re on a job.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Lead Sniper — Be the first mover to answer">
-<meta property="og:description" content="Every moving request in your Facebook groups, spotted in seconds and answered with a reply that sounds like you. English & Québec French. Runs in your browser.">
+<meta property="og:title" content="Lead Sniper — Be the first to answer">
+<meta property="og:description" content="Every request for your services in your Facebook groups — 20 local services, English &amp; Québec French — spotted in seconds and answered with a reply that sounds like you.">
 <meta property="og:url" content="https://hurbiexss.github.io/leadsniper/">
 <meta property="og:image" content="https://hurbiexss.github.io/leadsniper/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -120,6 +120,12 @@ section.alt { background: var(--bg-2); }
 .howbuy a { color: var(--accent-ink); font-weight: 650; }
 
 /* quick answers */
+.svcs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.svcs div { padding: 18px; border-radius: 16px; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
+.svcs h3 { font-size: 15px; margin-bottom: 8px; }
+.svcs p { display: flex; flex-wrap: wrap; gap: 6px; }
+.svcs p span { white-space: nowrap; padding: 4px 10px; border-radius: 99px; background: var(--bg-3); font-size: 13px; color: var(--ink-2); }
+.svcs-note { text-align: center; margin-top: 18px; color: var(--ink-3); font-size: 14.5px; }
 .qa { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .qa div { font-size: 14px; color: var(--ink-2); }
 .qa b { display: block; color: var(--ink); font-size: 15px; margin-bottom: 4px; }
@@ -136,7 +142,7 @@ section.alt { background: var(--bg-2); }
   nav.top .links { display: none; } nav.top .btn { margin-left: auto; }
   .hero .wrap, .flow, .prices { grid-template-columns: 1fr; }
   .stats { grid-template-columns: repeat(3, auto); }
-  .extras, .qa { grid-template-columns: 1fr 1fr; }
+  .extras, .qa, .svcs { grid-template-columns: 1fr 1fr; }
   .stage { padding: 0; }
   .stage .post, .stage .toast { position: static; width: auto; margin-top: 12px; animation: none; }
 }
@@ -144,7 +150,7 @@ section.alt { background: var(--bg-2); }
   .wrap { padding: 0 16px; }
   .hero { padding-top: 36px; }
   .stats { grid-template-columns: 1fr 1fr; }
-  .extras, .qa { grid-template-columns: 1fr; }
+  .extras, .qa, .svcs { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 </style>
@@ -153,27 +159,27 @@ section.alt { background: var(--bg-2); }
 
 <nav class="top"><div class="wrap">
   <a class="brand" href="#"><img src="assets/logo.svg" width="30" height="30" alt="">Lead Sniper</a>
-  <div class="links"><a href="#how">How it works</a><a href="#pricing">Pricing</a></div>
+  <div class="links"><a href="#services">Services</a><a href="#how">How it works</a><a href="#pricing">Pricing</a></div>
   <a class="btn primary" href="https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip">Download free</a>
 </div></nav>
 
 <header class="hero"><div class="wrap">
   <div>
-    <h1>Your next moving job was just posted. <span class="grad-text" style="white-space:nowrap">Answer it first.</span></h1>
-    <p class="lede">Lead Sniper spots every moving request in your Facebook groups — English &amp; Québec French — and writes the reply. <b>Pro</b> posts it while you're on a job.</p>
+    <h1>Your next job was just posted. <span class="grad-text" style="white-space:nowrap">Answer it first.</span></h1>
+    <p class="lede">Lead Sniper spots every request for your services in your Facebook groups — moving, cleaning, plumbing, snow removal and 16 more, in English &amp; Québec French — and writes the reply. <b>Pro</b> posts it while you're on a job.</p>
     <div class="ctas"><a class="btn primary" href="https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip">Download free</a><a class="btn" href="#pricing">See pricing</a></div>
     <p class="small">Brave &amp; Chrome · No account · Free forever to find leads</p>
     <div class="stats">
       <div><b>EN + FR</b><span>joual &amp; typos</span></div>
-      <div><b>6,000+</b><span>posts / second</span></div>
-      <div><b>500/500</b><span>unique replies</span></div>
-      <div><b>1,600+</b><span>test posts passed</span></div>
+      <div><b>5,000+</b><span>posts / second</span></div>
+      <div><b>20</b><span>local services</span></div>
+      <div><b>2,000+</b><span>test posts passed</span></div>
       <div><b>0</b><span>servers or cloud</span></div>
     </div>
   </div>
   <div class="stage">
     <div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="assets/inbox.png" width="1440" height="940" alt="The Lead Sniper inbox: leads with score, job details and a ready reply"></div>
-    <div class="toast"><span class="badge ok">✓ 97</span><div>Auto-replied to Étienne<small>couch · Orléans · tomorrow</small></div></div>
+    <div class="toast"><span class="badge ok">✓ 83</span><div>Auto-replied to Patrick<small>🚰 Plumbing · leak under the sink · Hull</small></div></div>
     <div class="post">
       <div class="lsbar"><span class="badge">🎯 90</span><b>Moving lead</b><span class="s">4½ · no elevator · Hull → Aylmer · Jul 1</span></div>
       <div class="body"><b>Marie Tremblay</b>Looking for movers for July 1st, 4 1/2 in Hull going to Aylmer. 2nd floor, no elevator 🙏</div>
@@ -181,15 +187,26 @@ section.alt { background: var(--bg-2); }
   </div>
 </div></header>
 
+<section id="services"><div class="wrap">
+  <h2>20 services. Turn on yours.</h2>
+  <div class="svcs">
+    <div><h3>Moving &amp; hauling</h3><p><span>🏠 Moving</span><span>📦 Pickup &amp; delivery</span><span>🏋️ Heavy items</span><span>🗑️ Junk removal</span></p></div>
+    <div><h3>Home</h3><p><span>🧽 Cleaning</span><span>🔧 Handyman</span><span>🪛 Assembly &amp; TV mounting</span><span>🎨 Painting</span><span>🚰 Plumbing</span><span>💡 Electrical</span><span>♨️ Heating &amp; AC</span><span>🧺 Appliance repair</span><span>🔨 Renovation</span></p></div>
+    <div><h3>Outdoor</h3><p><span>🌱 Lawn &amp; landscaping</span><span>❄️ Snow removal</span><span>🌳 Tree service</span><span>🪟 Windows, gutters &amp; pressure washing</span></p></div>
+    <div><h3>Auto, pests &amp; pets</h3><p><span>🚗 Auto repair &amp; tires</span><span>🐜 Pest control</span><span>🐕 Pet care</span></p></div>
+  </div>
+  <p class="svcs-note">Each one ignores its own trade’s ads, job posts and things for sale. Fewer services on, fewer posts to judge.</p>
+</div></section>
+
 <section class="alt" id="how"><div class="wrap">
   <h2>Spot it. Write it. Send it.</h2>
   <div class="flow">
     <div class="step">
       <div class="n"><i>1</i>Spots only customers</div>
-      <div class="fl"><span>Need 2 guys Saturday to load a 16ft truck in Kanata</span><span class="tag lead">Lead 90</span></div>
-      <div class="fl"><span>qqn aurait un truck pour un frigo ce soir?? je paye</span><span class="tag lead">Lead 94</span></div>
-      <div class="fl"><span>🚚 DÉMÉNAGEMENT PAS CHER 2 hommes + camion</span><span class="tag">Competitor</span></div>
-      <div class="fl"><span>Hiring movers! $22/h, send your CV</span><span class="tag">Job post</span></div>
+      <div class="fl"><span>Need 2 guys Saturday to load a 16ft truck in Kanata</span><span class="tag lead">🏠 Moving 86</span></div>
+      <div class="fl"><span>Fuite sous l’évier, qqn connaît un bon plombier à Hull?</span><span class="tag lead">🚰 Plumbing 83</span></div>
+      <div class="fl"><span>Need a cleaner? Book now, free quotes!</span><span class="tag">Competitor ad</span></div>
+      <div class="fl"><span>Hiring painters for our company, $22/h</span><span class="tag">Job post</span></div>
       <p class="note">Shows the job at a glance: size, floor, route, date, items.</p>
     </div>
     <div class="step">
@@ -206,18 +223,18 @@ section.alt { background: var(--bg-2); }
     </div>
   </div>
   <div class="extras">
-    <span>🧭 <b>Group Hunter</b> ranks local groups by moving requests per week</span>
+    <span>🧭 <b>Group Hunter</b> ranks local groups by requests for your services</span>
     <span>⏱️ <b>Auto-scans</b> every 15 min, with desktop alerts</span>
     <span>📥 <b>Inbox</b> with shortcuts, Won/Lost and CSV export</span>
   </div>
 </div></section>
 
 <section id="pricing"><div class="wrap">
-  <h2>One booked move pays for a year.</h2>
+  <h2>One booked job pays for a year.</h2>
   <div class="prices">
     <div class="price"><div class="nm">Free</div><div class="p">$0 <small>forever</small></div><p>Leads in your feed, auto-scans, 1-click replies, Group Hunter, Rehearsal.</p><a class="btn" href="https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip">Download free</a></div>
     <div class="price"><div class="nm">Pro Monthly <span class="pro">PRO</span></div><div class="p">$20 <small>CAD / month</small></div><p>Everything free + Autopilot replies. Unused days carry over.</p><a class="btn primary" href="mailto:justinhurbie@gmail.com?subject=Lead%20Sniper%20Pro%20%E2%80%94%20Monthly%20%28%2420%20CAD%29&amp;body=Hi%21%20I%27d%20like%20Lead%20Sniper%20Pro%2C%20monthly.%0A%0AMy%20browser%20code%20%28Lead%20Sniper%20%E2%86%92%20Settings%20%E2%86%92%20Lead%20Sniper%20Pro%29%3A%20%0A%0AI%27ll%20pay%20with%3A%20Bitcoin%20/%20Monero">Get Pro monthly</a></div>
-    <div class="price best"><span class="ribbon">SAVE $90</span><div class="nm">Pro Yearly <span class="pro">PRO</span></div><div class="p">$150 <small>CAD / year</small></div><p>$12.50 a month. Covers the July 1st rush.</p><a class="btn gold" href="mailto:justinhurbie@gmail.com?subject=Lead%20Sniper%20Pro%20%E2%80%94%20Yearly%20%28%24150%20CAD%29&amp;body=Hi%21%20I%27d%20like%20Lead%20Sniper%20Pro%2C%20yearly.%0A%0AMy%20browser%20code%20%28Lead%20Sniper%20%E2%86%92%20Settings%20%E2%86%92%20Lead%20Sniper%20Pro%29%3A%20%0A%0AI%27ll%20pay%20with%3A%20Bitcoin%20/%20Monero">Get Pro yearly</a></div>
+    <div class="price best"><span class="ribbon">SAVE $90</span><div class="nm">Pro Yearly <span class="pro">PRO</span></div><div class="p">$150 <small>CAD / year</small></div><p>$12.50 a month. Covers your busy season.</p><a class="btn gold" href="mailto:justinhurbie@gmail.com?subject=Lead%20Sniper%20Pro%20%E2%80%94%20Yearly%20%28%24150%20CAD%29&amp;body=Hi%21%20I%27d%20like%20Lead%20Sniper%20Pro%2C%20yearly.%0A%0AMy%20browser%20code%20%28Lead%20Sniper%20%E2%86%92%20Settings%20%E2%86%92%20Lead%20Sniper%20Pro%29%3A%20%0A%0AI%27ll%20pay%20with%3A%20Bitcoin%20/%20Monero">Get Pro yearly</a></div>
   </div>
   <p class="howbuy">E-mail your browser code (Settings → Lead Sniper Pro) → pay in ₿ Bitcoin or ɱ Monero → paste your key. <a href="mailto:justinhurbie@gmail.com?subject=Lead%20Sniper%20%E2%80%94%20free%207-day%20Pro%20trial&amp;body=Hi%21%20I%27d%20like%20to%20try%20Lead%20Sniper%20Pro%20for%207%20days.%0A%0AMy%20browser%20code%20%28Lead%20Sniper%20%E2%86%92%20Settings%20%E2%86%92%20Lead%20Sniper%20Pro%29%3A%20">Or ask for a free 7-day trial →</a></p>
 </div></section>
@@ -226,13 +243,13 @@ section.alt { background: var(--bg-2); }
   <div><b>Safe for my account?</b>Reads like you do, never asks for your password. Pro has limits, quiet hours and Rehearsal.</div>
   <div><b>Where's my data?</b>Only in your browser. No account, no cloud.</div>
   <div><b>When Pro ends?</b>Autopilot pauses with a Renew button. Everything else keeps working.</div>
-  <div><b>Which browsers?</b>Brave or Chrome on Mac, Windows or Linux.</div>
+  <div><b>Which jobs?</b>20 services, from moving and cleaning to plumbing and snow removal. Turn on only yours.</div>
 </div></section>
 
 <section class="final"><div class="wrap">
   <h2>Stop scrolling. Start booking.</h2>
   <div class="ctas"><a class="btn primary" href="https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip">Download free</a><a class="btn gold" href="#pricing">Get Pro</a></div>
-  <p class="install">Unzip → <code>brave://extensions</code> → Developer mode → Load unpacked. 2 minutes.</p>
+  <p class="install">Brave or Chrome: unzip → <code>brave://extensions</code> → Developer mode → Load unpacked. 2 minutes.</p>
   <div class="foot"><span>© 2026 Lead Sniper · Made in Gatineau, Québec</span><span><a href="mailto:justinhurbie@gmail.com">justinhurbie@gmail.com</a> · Not affiliated with Meta or Facebook.</span></div>
 </div></section>
 
