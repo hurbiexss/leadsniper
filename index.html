@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lead Sniper — Be the first mover to answer</title>
+<meta name="description" content="Lead Sniper watches your local Facebook groups, spots every person asking for movers — in English or Québec French — and has a personal reply ready in one click. With Pro, it replies for you while you're on a job.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lead Sniper — Be the first mover to answer">
+<meta property="og:description" content="Every moving request in your Facebook groups, spotted in seconds and answered with a reply that sounds like you. English & Québec French. Runs in your browser.">
+<meta property="og:url" content="https://hurbiexss.github.io/leadsniper/">
+<meta property="og:image" content="https://hurbiexss.github.io/leadsniper/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FF5A1F">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0F1728; --ink-2: #475467; --ink-3: #667085; --line: #EAECF0; --line-2: #D0D5DD;
+  --bg: #FFFFFF; --bg-2: #FAF9F7; --bg-3: #F2F4F7;
+  --accent: #FF5A1F; --accent-ink: #C2410C; --accent-soft: #FFF2EB;
+  --grad: linear-gradient(135deg, #FF8A4C 0%, #FF5A1F 52%, #E23D0E 100%);
+  --btn: linear-gradient(180deg, #FF7536 0%, #F5520F 100%);
+  --gold: linear-gradient(135deg, #F9DD8B 0%, #F0B648 48%, #DC8A1E 100%);
+  --good: #12B76A; --good-soft: #ECFDF3;
+  --night: #0B0F17; --night-2: #141A26; --night-line: #232B3A;
+  --r: 18px; --shadow: 0 1px 2px rgba(16,24,40,.05), 0 8px 24px -8px rgba(16,24,40,.10);
+  --shadow-lg: 0 30px 70px -20px rgba(16,24,40,.30), 0 8px 20px rgba(16,24,40,.08);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+h1, h2, h3 { letter-spacing: -.03em; line-height: 1.08; margin: 0; }
+h2 { font-size: clamp(32px, 4.4vw, 52px); font-weight: 800; }
+h3 { font-size: 20px; font-weight: 700; letter-spacing: -.015em; line-height: 1.25; }
+p { margin: 0; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-ink); }
+.lede { font-size: clamp(17px, 1.6vw, 20px); color: var(--ink-2); max-width: 680px; }
+.center { text-align: center; } .center .lede { margin-inline: auto; }
+.grad-text { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 48px; padding: 0 22px; border-radius: 12px; font: inherit; font-weight: 650; font-size: 16px; text-decoration: none; border: 1px solid var(--line-2); background: #fff; color: var(--ink); cursor: pointer; transition: transform .12s, box-shadow .2s, background .2s; white-space: nowrap; }
+.btn:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
+.btn.primary { background: var(--btn); border-color: #EA4A0D; color: #fff; box-shadow: 0 1px 2px rgba(234,74,13,.3), inset 0 1px 0 rgba(255,255,255,.25); }
+.btn.primary:hover { box-shadow: 0 12px 28px -10px rgba(245,82,15,.65), inset 0 1px 0 rgba(255,255,255,.25); }
+.btn.gold { background: var(--gold); border-color: #E3A33A; color: #5A3500; box-shadow: inset 0 1px 0 rgba(255,255,255,.5); }
+.btn.ghost-dark { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.16); color: #fff; }
+.btn.lg { height: 56px; padding: 0 28px; font-size: 17px; border-radius: 14px; }
+.pro { display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: var(--gold); color: #5A3500; font-size: 11px; font-weight: 800; letter-spacing: .08em; vertical-align: middle; box-shadow: inset 0 1px 0 rgba(255,255,255,.5); }
+
+/* nav */
+nav.top { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.82); backdrop-filter: saturate(1.6) blur(14px); border-bottom: 1px solid rgba(234,236,240,.7); }
+nav.top .wrap { display: flex; align-items: center; gap: 28px; height: 68px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 18px; letter-spacing: -.02em; text-decoration: none; }
+nav.top .links { display: flex; gap: 26px; margin-left: auto; font-size: 15px; font-weight: 550; color: var(--ink-2); }
+nav.top .links a { text-decoration: none; } nav.top .links a:hover { color: var(--ink); }
+nav.top .btn { height: 40px; padding: 0 16px; font-size: 15px; border-radius: 10px; }
+
+/* hero */
+.hero { position: relative; overflow: hidden; padding: 88px 0 0; background:
+  radial-gradient(900px 480px at 85% -10%, rgba(255,138,76,.22), transparent 60%),
+  radial-gradient(700px 420px at 0% 10%, rgba(249,221,139,.25), transparent 60%), var(--bg); }
+.hero h1 { font-size: clamp(44px, 7vw, 84px); font-weight: 800; letter-spacing: -.045em; max-width: 980px; margin: 18px auto 0; }
+.hero .lede { margin: 24px auto 0; font-size: clamp(18px, 1.9vw, 22px); }
+.hero .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 36px; }
+.hero .small { margin-top: 14px; font-size: 14px; color: var(--ink-3); }
+.pill { display: inline-flex; align-items: center; gap: 10px; padding: 6px 14px 6px 6px; border-radius: 99px; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); font-size: 14px; font-weight: 550; color: var(--ink-2); }
+.pill b { background: var(--grad); color: #fff; border-radius: 99px; padding: 2px 10px; font-size: 12px; letter-spacing: .02em; }
+.stage { position: relative; margin: 64px auto 0; max-width: 1080px; }
+.frame { position: relative; max-height: 660px; border-radius: 16px 16px 0 0; overflow: hidden; background: #fff; border: 1px solid var(--line); border-bottom: 0; box-shadow: var(--shadow-lg); }
+.frame .bar { height: 40px; display: flex; align-items: center; gap: 8px; padding: 0 16px; background: var(--bg-3); border-bottom: 1px solid var(--line); }
+.frame::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 120px; background: linear-gradient(transparent, #fff); }
+.frame .bar i { width: 11px; height: 11px; border-radius: 50%; background: #E4E7EC; }
+.frame .bar span { margin-left: 14px; flex: 1; max-width: 420px; height: 24px; border-radius: 8px; background: #fff; border: 1px solid var(--line); font-size: 12px; color: var(--ink-3); display: flex; align-items: center; padding: 0 10px; }
+.float { position: absolute; z-index: 3; animation: bob 6s ease-in-out infinite; }
+.float.a { left: -56px; top: 120px; width: 400px; }
+.float.b { right: -40px; top: 300px; animation-delay: -3s; }
+@keyframes bob { 50% { transform: translateY(-10px); } }
+
+/* in-feed banner + post mock (Lead Sniper's own UI) */
+.post { background: #fff; border-radius: 16px; box-shadow: var(--shadow-lg); outline: 2px solid var(--accent); outline-offset: -2px; overflow: hidden; text-align: left; }
+.lsbar { display: flex; align-items: center; gap: 10px; padding: 10px 12px; background: linear-gradient(90deg, #FFF1EA, #FFF8F4); border-bottom: 1px solid #FFD9C7; font-size: 13px; }
+.badge { display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px; border-radius: 99px; background: var(--btn); color: #fff; font-weight: 700; font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.badge.ok { background: linear-gradient(180deg, #1FCB7E, #0FA45E); }
+.lsbar .t { font-weight: 700; white-space: nowrap; }
+.lsbar .s { color: var(--ink-2); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mini { font: inherit; font-size: 12.5px; font-weight: 650; padding: 6px 12px; border-radius: 9px; border: 1px solid #EA4A0D; background: var(--btn); color: #fff; }
+.mini.w { background: #fff; color: var(--ink); border-color: var(--line-2); }
+.post .body { padding: 14px 16px 16px; }
+.who { display: flex; align-items: center; gap: 10px; }
+.av { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 700; font-size: 14px; flex: none; }
+.who b { display: block; font-size: 14.5px; } .who div span { font-size: 12.5px; color: var(--ink-3); }
+.post .txt { margin-top: 10px; font-size: 15px; line-height: 1.5; }
+.panel { padding: 12px; border-bottom: 1px solid var(--line); background: #fff; }
+.panel .box { border: 1px solid #FF8A5C; box-shadow: 0 0 0 3px #FFE4D6; border-radius: 10px; padding: 10px 12px; font-size: 14px; line-height: 1.5; }
+.panel .row { display: flex; gap: 8px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+.panel .hint { margin-left: auto; font-size: 12px; color: var(--ink-3); }
+.toast { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 16px; background: linear-gradient(180deg, #1A2233, #0F1420); color: #fff; box-shadow: 0 20px 40px -12px rgba(16,24,40,.5); font-size: 14px; font-weight: 550; border: 1px solid rgba(255,255,255,.08); }
+.toast small { display: block; color: #9AA4B5; font-weight: 500; font-size: 12.5px; }
+
+/* sections */
+section { padding: 120px 0; }
+section.alt { background: var(--bg-2); }
+.head { display: grid; gap: 18px; margin-bottom: 56px; }
+.head.center { justify-items: center; }
+.proof { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #fff; padding: 36px 0; }
+.proof .wrap { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
+.stat b { display: block; font-size: 30px; font-weight: 800; letter-spacing: -.03em; }
+.stat span { font-size: 14px; color: var(--ink-3); line-height: 1.4; display: block; margin-top: 2px; }
+
+.problem { display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: center; }
+.problem ul { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 14px; }
+.problem li { display: flex; gap: 14px; align-items: flex-start; font-size: 17px; color: var(--ink-2); }
+.problem li i { flex: none; width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; font-style: normal; font-size: 15px; background: #FEE4E2; color: #B42318; }
+.problem li.yes i { background: var(--good-soft); color: #067647; }
+.vs { display: grid; gap: 14px; }
+.clock { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 22px; box-shadow: var(--shadow); }
+.clock .k { font-size: 13px; font-weight: 700; color: var(--ink-3); text-transform: uppercase; letter-spacing: .06em; }
+.clock .v { font-size: 40px; font-weight: 800; letter-spacing: -.04em; margin-top: 4px; }
+.clock.win { background: var(--night); border-color: var(--night); color: #fff; }
+.clock.win .k { color: #FFB38F; }
+.clock p { color: var(--ink-3); font-size: 14.5px; } .clock.win p { color: #AEB8C8; }
+
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 28px; box-shadow: var(--shadow); transition: transform .2s, box-shadow .2s; }
+.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.card .ic { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; font-size: 24px; background: var(--accent-soft); margin-bottom: 18px; }
+.card p { color: var(--ink-2); margin-top: 8px; font-size: 15.5px; }
+
+.split { display: grid; grid-template-columns: 1fr 1.3fr; gap: 72px; align-items: center; }
+.split.flip > :first-child { order: 2; }
+.split > * { min-width: 0; }
+.split .copy { display: grid; gap: 18px; }
+.checks { list-style: none; padding: 0; margin: 6px 0 0; display: grid; gap: 12px; }
+.checks li { position: relative; padding-left: 32px; color: var(--ink-2); }
+.checks li::before { content: "✓"; position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%; background: var(--accent-soft); color: var(--accent-ink); display: grid; place-items: center; font-size: 12px; font-weight: 800; }
+.shot { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow-lg); background: #fff; }
+
+.feedlist { display: grid; gap: 10px; }
+.trio { display: flex; gap: 12px 28px; justify-content: center; flex-wrap: wrap; margin-top: 32px; color: var(--ink-2); font-size: 15.5px; }
+.fl { display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); font-size: 14.5px; }
+.fl .q { flex: 1; min-width: 0; color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tag { flex: none; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 99px; white-space: nowrap; }
+.tag.lead { background: var(--btn); color: #fff; }
+.tag.no { background: var(--bg-3); color: var(--ink-3); }
+
+.replies { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.rp { background: #fff; border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow); padding: 22px; display: grid; gap: 14px; align-content: start; }
+.rp .orig { font-size: 14px; color: var(--ink-2); background: var(--bg-3); border-radius: 14px 14px 14px 4px; padding: 12px 14px; }
+.rp .orig b { color: var(--ink); display: block; font-size: 13px; margin-bottom: 2px; }
+.rp .sum { font-size: 12.5px; font-weight: 650; color: var(--accent-ink); display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.rp .out { font-size: 14.5px; background: linear-gradient(180deg, #FFF4EE, #FFEDE3); border: 1px solid #FFD9C7; border-radius: 14px 14px 4px 14px; padding: 12px 14px; }
+.lang { font-size: 11px; font-weight: 800; letter-spacing: .06em; padding: 2px 7px; border-radius: 6px; background: var(--ink); color: #fff; }
+
+/* Pro (dark) */
+.night { background: radial-gradient(800px 400px at 80% 0%, rgba(240,182,72,.16), transparent 60%), radial-gradient(700px 400px at 10% 100%, rgba(255,90,31,.18), transparent 60%), var(--night); color: #fff; }
+.night .lede, .night .checks li { color: #AEB8C8; }
+.night .checks li::before { background: rgba(240,182,72,.16); color: #F9DD8B; }
+.night .shot { border-color: var(--night-line); }
+.night .eyebrow { color: #F9DD8B; }
+.safety { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 72px; }
+.safety div { padding: 20px; border-radius: 16px; background: var(--night-2); border: 1px solid var(--night-line); }
+.safety b { display: block; font-size: 15px; margin-bottom: 4px; }
+.safety span { font-size: 14px; color: #8D97A8; }
+
+/* steps */
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; counter-reset: s; }
+.step { position: relative; padding: 28px; border-radius: var(--r); background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
+.step::before { counter-increment: s; content: counter(s); width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--grad); color: #fff; font-weight: 800; margin-bottom: 18px; box-shadow: 0 10px 20px -8px rgba(245,82,15,.6); }
+.step p { color: var(--ink-2); margin-top: 8px; font-size: 15.5px; }
+.step code { font-size: 13px; background: var(--bg-3); padding: 2px 6px; border-radius: 6px; }
+
+/* pricing */
+.prices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
+.price { display: flex; flex-direction: column; gap: 18px; padding: 32px; border-radius: 22px; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
+.price .n { font-size: 15px; font-weight: 700; color: var(--ink-2); display: flex; align-items: center; gap: 8px; }
+.price .p { font-size: 52px; font-weight: 800; letter-spacing: -.045em; line-height: 1; }
+.price .p small { font-size: 16px; font-weight: 600; color: var(--ink-3); letter-spacing: 0; }
+.price ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; font-size: 15px; color: var(--ink-2); flex: 1; }
+.price li { padding-left: 26px; position: relative; } .price li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 800; }
+.price.best { background: var(--night); color: #fff; border-color: var(--night); position: relative; box-shadow: 0 30px 60px -20px rgba(11,15,23,.6); }
+.price.best .n { color: #F9DD8B; } .price.best .p small, .price.best ul { color: #AEB8C8; } .price.best li::before { color: #F0B648; }
+.ribbon { position: absolute; top: -13px; right: 24px; padding: 4px 12px; border-radius: 99px; background: var(--gold); color: #5A3500; font-size: 12px; font-weight: 800; letter-spacing: .04em; }
+.price .btn { width: 100%; }
+.paynote { display: flex; gap: 18px; align-items: center; justify-content: center; flex-wrap: wrap; margin-top: 28px; color: var(--ink-3); font-size: 14.5px; }
+.coin { display: inline-flex; align-items: center; gap: 8px; font-weight: 650; color: var(--ink-2); }
+.coin i { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-style: normal; font-size: 12px; font-weight: 800; }
+.buy { margin-top: 56px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.buy div { padding: 20px; border-radius: 16px; border: 1px dashed var(--line-2); background: #fff; font-size: 15px; color: var(--ink-2); }
+.buy b { display: block; color: var(--ink); margin-bottom: 4px; }
+
+/* faq */
+.faq { max-width: 820px; margin: 0 auto; display: grid; gap: 12px; }
+details { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 0 22px; box-shadow: var(--shadow); }
+summary { cursor: pointer; list-style: none; padding: 20px 0; font-weight: 650; font-size: 17px; display: flex; justify-content: space-between; gap: 16px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; font-size: 22px; line-height: 1; color: var(--ink-3); transition: transform .2s; }
+details[open] summary::after { transform: rotate(45deg); }
+details p { padding: 0 0 20px; color: var(--ink-2); }
+
+.final { text-align: center; padding: 120px 0; background: radial-gradient(800px 400px at 50% 120%, rgba(255,90,31,.35), transparent 70%), var(--night); color: #fff; }
+.final h2 { font-size: clamp(36px, 5.5vw, 64px); max-width: 860px; margin: 0 auto; }
+.final .lede { color: #AEB8C8; margin: 22px auto 0; }
+.final .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 36px; }
+footer { padding: 36px 0 48px; background: var(--night); color: #8D97A8; font-size: 14px; border-top: 1px solid var(--night-line); }
+footer .wrap { display: flex; gap: 20px; justify-content: space-between; flex-wrap: wrap; }
+footer a { color: #C9D1DD; }
+
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s cubic-bezier(.2,.8,.2,1), transform .7s cubic-bezier(.2,.8,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
+
+@media (max-width: 1100px) { .float.a { left: 8px; width: 360px; } .float.b { right: 8px; } }
+@media (max-width: 900px) {
+  .frame { max-height: 420px; }
+  nav.top .links { display: none; } nav.top .btn { margin-left: auto; }
+  .proof .wrap { grid-template-columns: repeat(2, 1fr); }
+  .problem, .split, .grid3, .replies, .steps, .prices, .safety, .buy { grid-template-columns: 1fr; }
+  .split.flip > :first-child { order: 0; }
+  .float { position: static; width: auto !important; margin: 16px auto 0; animation: none; }
+  .stage { display: flex; flex-direction: column-reverse; }
+  section { padding: 84px 0; }
+}
+@media (max-width: 560px) {
+  .wrap { padding: 0 16px; }
+  .stat b { font-size: 22px; }
+  .trio { flex-direction: column; align-items: flex-start; }
+  .hero { padding-top: 56px; }
+  .lsbar .s { display: none; }
+  .fl .q { white-space: normal; }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } .reveal { opacity: 1; transform: none; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<nav class="top"><div class="wrap">
+  <a class="brand" href="#"><img src="assets/logo.svg" width="32" height="32" alt="">Lead Sniper</a>
+  <div class="links"><a href="#features">Features</a><a href="#replies">Replies</a><a href="#pro">Pro</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
+  <a class="btn primary" href="https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip">Download free</a>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap center">
+    <span class="pill"><b>NEW</b> Pro: replies that post themselves while you're on a job</span>
+    <h1>Your next moving job was just posted.<br><span class="grad-text">Answer it first.</span></h1>
+    <p class="lede">Lead Sniper watches your local Facebook groups, spots every person asking for movers — in English or Québec French — and has a personal reply ready in one click. With Pro, it answers for you.</p>
+    <div class="ctas">
+      <a class="btn primary lg" href="https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip">Download free for Brave &amp; Chrome</a>
+      <a class="btn lg" href="#how">See how it works</a>
+    </div>
+    <p class="small">Free forever for finding leads · No account · Nothing leaves your computer</p>
+  </div>
+  <div class="wrap">
+    <div class="stage">
+      <div class="float a">
+        <div class="post">
+          <div class="lsbar"><span class="badge">🎯 90</span><span class="t">Moving lead</span><span class="s">4½ · 2nd floor, no elevator · Hull → Aylmer · Jul 1</span><span class="mini">Reply</span></div>
+          <div class="body">
+            <div class="who"><span class="av" style="background:#7C5CFF">MT</span><div><b>Marie Tremblay</b><span>Gatineau Moving &amp; Selling · 2 min</span></div></div>
+            <p class="txt">Hi everyone! Looking for movers for July 1st, 4 1/2 in Hull going to Aylmer. 2nd floor, no elevator. Any recommendations? 🙏</p>
+          </div>
+        </div>
+      </div>
+      <div class="float b"><div class="toast"><span class="badge ok">✓ 97</span><div>Auto-replied to Étienne<small>couch · Orléans · tomorrow — in French</small></div></div></div>
+      <div class="frame"><div class="bar"><i></i><i></i><i></i><span>Lead Sniper — Inbox</span></div><img src="assets/inbox.png" width="1440" height="940" alt="The Lead Sniper inbox: moving leads with score, job details and a ready reply"></div>
+    </div>
+  </div>
+</header>
+
+<div class="proof"><div class="wrap">
+  <div class="stat"><b>2 languages</b><span>English &amp; Québec French — joual, franglais and typos too</span></div>
+  <div class="stat"><b>6,000+</b><span>posts read per second by the lead engine</span></div>
+  <div class="stat"><b>500 / 500</b><span>replies unique in our variety test — no copy-paste spam</span></div>
+  <div class="stat"><b>1,555</b><span>labelled posts in the test suite it must pass</span></div>
+  <div class="stat"><b>0 servers</b><span>runs in your browser — no account, no cloud</span></div>
+</div></div>
+
+<section>
+  <div class="wrap problem">
+    <div class="reveal">
+      <span class="eyebrow">The problem</span>
+      <h2 style="margin-top:14px">The first good reply wins the job.</h2>
+      <p class="lede" style="margin-top:18px">Someone posts “need movers Saturday” and within the hour the comments pile up. You were on a job, driving, or asleep. Lead Sniper never is.</p>
+      <ul>
+        <li><i>✕</i>Scrolling ten groups a night to find two real requests</li>
+        <li><i>✕</i>Wading through competitors' ads, job posts and “for sale” posts</li>
+        <li><i>✕</i>Typing the same reply again — and showing up after everyone else</li>
+        <li class="yes"><i>✓</i>Every request found, scored and summed up — reply ready in one click</li>
+      </ul>
+    </div>
+    <div class="vs reveal">
+      <div class="clock"><div class="k">Without Lead Sniper</div><div class="v">Hours a week</div><p>scrolling groups by hand — and still missing posts while you work.</p></div>
+      <div class="clock win"><div class="k">With Lead Sniper</div><div class="v">One click per lead</div><p>It reads the groups for you. You check the reply and hit Enter — or let Pro post it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="features">
+  <div class="wrap">
+    <div class="head center reveal"><span class="eyebrow">Everything you need</span><h2>A full-time lead assistant in your browser.</h2><p class="lede">Built by a moving company, for moving companies, delivery drivers and junk haulers.</p></div>
+    <div class="grid3">
+      <div class="card reveal"><div class="ic">🎯</div><h3>Spots real customers</h3><p>Reads each post like you would and pulls out the job: apartment size, floor, elevator, route, date, items and budget.</p></div>
+      <div class="card reveal"><div class="ic">🧹</div><h3>Ignores the noise</h3><p>Competitors' ads, job offers, people selling a couch, “thanks to my movers” posts — skipped, so your inbox is only customers.</p></div>
+      <div class="card reveal"><div class="ic">⚜️</div><h3>Fluent in Québec French</h3><p>“qqn aurait un truck pour un frigo ce soir??” is a lead. Joual, franglais, missing accents and typos included.</p></div>
+      <div class="card reveal"><div class="ic">✍️</div><h3>Replies that sound like you</h3><p>Every reply is written from the customer's own words — their name, their couch, their date, your phone and website. Never the same twice.</p></div>
+      <div class="card reveal"><div class="ic">🧭</div><h3>Group Hunter</h3><p>Finds the local groups worth watching and ranks them by how many moving requests they bring each week.</p></div>
+      <div class="card reveal"><div class="ic">🤖</div><h3>Autopilot <span class="pro">PRO</span></h3><p>Replies post themselves the moment a scan finds a clear request — with limits, quiet hours and a free Rehearsal mode.</p></div>
+      <div class="card reveal"><div class="ic">⏱️</div><h3>Scans on a schedule</h3><p>Every 15 minutes to once a day, on the hours and days you choose. A desktop notification for every hot lead.</p></div>
+      <div class="card reveal"><div class="ic">📥</div><h3>An inbox built for speed</h3><p>Keyboard shortcuts, Won / Lost tracking, notes, CSV export and insights on your best groups and busiest hours.</p></div>
+      <div class="card reveal"><div class="ic">🔒</div><h3>Private by design</h3><p>No account, no server, no AI service. Your leads and replies stay in your own browser. It never asks for your Facebook password.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="copy reveal">
+      <span class="eyebrow">Right in your feed</span>
+      <h2>It reads the post so you don't have to.</h2>
+      <p class="lede">Scroll your groups like always. Customers light up with a score and the job in one line. Click <b>Reply</b>, check it, press Enter. Lead Sniper sees your comment and marks the lead answered.</p>
+      <ul class="checks"><li>Highlights leads while you browse — or scans your groups on its own</li><li>Opens “See more”, reads the real post time and isn’t fooled by pinned posts</li><li>Never answers the same person twice, never where you already commented</li></ul>
+    </div>
+    <div class="reveal">
+      <div class="post">
+        <div class="lsbar"><span class="badge">🎯 90</span><span class="t">Moving lead</span><span class="s">4½ · 2nd floor, no elevator · Hull → Aylmer · Jul 1</span><span class="mini">Reply</span></div>
+        <div class="panel">
+          <div class="box">Hello Marie! Hull to Aylmer on July 1st — we'd be happy to take care of your move! Quotes and info at yourmovingco.ca — or just text 819-555-0142 🙂 — Your Moving Co.</div>
+          <div class="row"><span class="mini">Put in comment box</span><span class="mini w">Copy</span><span class="hint">You review it and press Enter.</span></div>
+        </div>
+        <div class="body">
+          <div class="who"><span class="av" style="background:#7C5CFF">MT</span><div><b>Marie Tremblay</b><span>Gatineau Moving &amp; Selling · 2 min</span></div></div>
+          <p class="txt">Hi everyone! Looking for movers for July 1st, 4 1/2 in Hull going to Aylmer. 2nd floor, no elevator. Any recommendations? 🙏</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap split flip">
+    <div class="copy reveal">
+      <span class="eyebrow">Only customers</span>
+      <h2>Real requests in. Everything else out.</h2>
+      <p class="lede">Group feeds are full of posts that use moving words but aren't customers. Lead Sniper knows who is talking — and why.</p>
+      <ul class="checks"><li>Tells customers apart from competitors, job seekers and sellers</li><li>Catches implied needs: “it won't fit in my car”</li><li>A second opinion learns from every “Not a lead” you click</li></ul>
+    </div>
+    <div class="feedlist reveal">
+      <div class="fl"><span class="q">Need 2 guys Saturday morning to help load a 16ft truck in Kanata, will pay cash</span><span class="tag lead">Lead · 90</span></div>
+      <div class="fl"><span class="q">qqn aurait un truck pour déplacer un frigo de hull a gatineau ce soir?? je paye</span><span class="tag lead">Lead · 94</span></div>
+      <div class="fl"><span class="q">Anyone know someone who moves gun safes? Approx 600 lbs, into the basement</span><span class="tag lead">Lead · 83</span></div>
+      <div class="fl"><span class="q">🚚 DÉMÉNAGEMENT PAS CHER 🚚 2 hommes + camion 80$/h. Appelez-nous</span><span class="tag no">Competitor ad</span></div>
+      <div class="fl"><span class="q">Hiring movers! $22/h, must be able to lift 50 lbs. Send your CV</span><span class="tag no">Job post</span></div>
+      <div class="fl"><span class="q">Selling my sectional, 200$, must pick up in Aylmer this weekend</span><span class="tag no">For sale</span></div>
+      <div class="fl"><span class="q">Thanks to the amazing crew who moved us last week, highly recommend!</span><span class="tag no">Testimonial</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="replies">
+  <div class="wrap">
+    <div class="head center reveal"><span class="eyebrow">Smart replies</span><h2>Personal replies, written in a blink.</h2><p class="lede">Not a template with a name pasted in. Each reply is built from what the customer actually wrote — in their language. These are real outputs.</p></div>
+    <div class="replies">
+      <div class="rp reveal"><div class="orig"><b>Marie Tremblay</b>Looking for movers for July 1st, 4 1/2 in Hull going to Aylmer. 2nd floor, no elevator.</div><div class="sum"><span class="lang">EN</span>Moving · 4½ · Hull → Aylmer · Jul 1</div><div class="out">Hello Marie! Hull to Aylmer on July 1st — we'd be happy to take care of your move! Quotes and info at yourmovingco.ca — or just text 819-555-0142 🙂 — Your Moving Co.</div></div>
+      <div class="rp reveal"><div class="orig"><b>Étienne Lafleur</b>Quelqu’un aurait un camion pour aller chercher un divan sur Marketplace à Orléans demain? Je paie bien!</div><div class="sum"><span class="lang">FR</span>Pickup &amp; delivery · couch · Orléans · Tomorrow</div><div class="out">Allo Étienne! On peut aller chercher votre divan de Marketplace pour vous demain! Soumission et infos sur yourmovingco.ca — ou textez le 819-555-0142 🚚 — Your Moving Co.</div></div>
+      <div class="rp reveal"><div class="orig"><b>Priya Natarajan</b>Bought a sectional on Kijiji, seller is in Orléans, I am in Gatineau and dont have a truck. Who can help?</div><div class="sum"><span class="lang">EN</span>Pickup &amp; delivery · couch · Orléans → Gatineau</div><div class="out">Hello Priya! We can pick up and deliver your sectional — truck and straps included. Quotes and info at yourmovingco.ca — or just text 819-555-0142 🚚 — Your Moving Co.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="head center reveal"><span class="eyebrow">Group Hunter</span><h2>Find the groups where the jobs are.</h2><p class="lede">Press <b>Find groups</b>. Lead Sniper searches your areas, reads Facebook's suggestions and samples each group's newest posts — then ranks every group by the moving requests it brings per week.</p></div>
+    <div class="shot reveal" style="max-width:1000px;margin:0 auto"><img src="assets/group-hunter.png" width="1150" height="520" alt="Group Hunter ranking local Facebook groups by moving requests per week" loading="lazy"></div>
+    <div class="trio reveal"><span>👥 Members, posts per day and competitor ads at a glance</span><span>⚠️ Warns you about groups whose rules ban business posts</span><span>👀 Read-only: it never joins, posts or comments for you</span></div>
+  </div>
+</section>
+
+<section class="night" id="pro">
+  <div class="wrap">
+    <div class="split">
+      <div class="copy reveal">
+        <span class="eyebrow">Lead Sniper <span class="pro">PRO</span></span>
+        <h2>Be first under every post. Even mid-move.</h2>
+        <p class="lede">Turn on Autopilot and Lead Sniper posts your personal reply the moment a scan finds a clear moving request — while you're carrying a couch up three floors.</p>
+        <ul class="checks"><li>Replies during scans, and on the pages you scroll if you want</li><li>Only clear, direct requests above your minimum score, for the jobs you pick</li><li>Rehearsal mode is free: see exactly what it would post first</li></ul>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px"><a class="btn gold lg" href="#pricing">Get Pro</a><a class="btn ghost-dark lg" href="mailto:justinhurbie@gmail.com?subject=Lead%20Sniper%20%E2%80%94%20free%207-day%20Pro%20trial&amp;body=Hi%21%20I%27d%20like%20to%20try%20Lead%20Sniper%20Pro%20for%207%20days.%0A%0AMy%20browser%20code%20%28Lead%20Sniper%20%E2%86%92%20Settings%20%E2%86%92%20Lead%20Sniper%20Pro%29%3A%20">Ask for a free 7-day trial</a></div>
+      </div>
+      <div class="shot reveal"><img src="assets/autopilot.png" width="860" height="800" alt="Autopilot settings: limits, quiet hours and the jobs to answer" loading="lazy"></div>
+    </div>
+    <div class="safety">
+      <div class="reveal"><b>🛡️ Hourly &amp; daily limits</b><span>Plus a wait between replies and a per-group cooldown.</span></div>
+      <div class="reveal"><b>🌙 Quiet hours</b><span>Nothing goes out while you sleep, unless you want it to.</span></div>
+      <div class="reveal"><b>🙅 Never twice</b><span>Not on the same post, not to the same person within a week.</span></div>
+      <div class="reveal"><b>⏸️ Pauses itself</b><span>If it can't confirm a reply posted, it stops and tells you.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="head center reveal"><span class="eyebrow">Get started</span><h2>Up and running in 2 minutes.</h2><p class="lede">Works in Brave and Google Chrome on Mac and Windows. No sign-up.</p></div>
+    <div class="steps">
+      <div class="step reveal"><h3>Download &amp; unzip</h3><p>Get the free download and double-click the zip. Keep the folder somewhere permanent, like your Documents.</p></div>
+      <div class="step reveal"><h3>Add it to your browser</h3><p>Open <code>brave://extensions</code> (or <code>chrome://extensions</code>), turn on <b>Developer mode</b>, click <b>Load unpacked</b> and pick the folder.</p></div>
+      <div class="step reveal"><h3>Tell it your groups</h3><p>The welcome screen asks for your business name and group links. Then scroll Facebook — the leads light up.</p></div>
+    </div>
+    <div class="center" style="margin-top:44px"><a class="btn primary lg" href="https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip">Download Lead Sniper — free</a></div>
+  </div>
+</section>
+
+<section class="alt" id="pricing">
+  <div class="wrap">
+    <div class="head center reveal"><span class="eyebrow">Pricing</span><h2>Free to find leads. Pro to win them first.</h2><p class="lede">One booked move pays for a year of Pro.</p></div>
+    <div class="prices">
+      <div class="price reveal">
+        <div class="n">Free</div>
+        <div class="p">$0 <small>forever</small></div>
+        <ul><li>Leads highlighted in your feed</li><li>Scheduled scans &amp; notifications</li><li>Smart replies in one click (EN/FR)</li><li>Group Hunter</li><li>Inbox, insights &amp; CSV export</li><li>Autopilot Rehearsal</li></ul>
+        <a class="btn" href="https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip">Download free</a>
+      </div>
+      <div class="price reveal">
+        <div class="n">Pro · Monthly <span class="pro">PRO</span></div>
+        <div class="p">$20 <small>CAD / month</small></div>
+        <ul><li>Everything in Free</li><li>Autopilot: replies post themselves</li><li>Also while you browse</li><li>Limits, quiet hours &amp; safety pauses</li><li>Renew early — unused days carry over</li></ul>
+        <a class="btn primary" href="mailto:justinhurbie@gmail.com?subject=Lead%20Sniper%20Pro%20%E2%80%94%20Monthly%20%28%2420%20CAD%29&amp;body=Hi%21%20I%27d%20like%20Lead%20Sniper%20Pro%2C%20monthly.%0A%0AMy%20browser%20code%20%28Lead%20Sniper%20%E2%86%92%20Settings%20%E2%86%92%20Lead%20Sniper%20Pro%29%3A%20%0A%0AI%27ll%20pay%20with%3A%20Bitcoin%20/%20Monero">Get Pro monthly</a>
+      </div>
+      <div class="price best reveal">
+        <span class="ribbon">SAVE $90</span>
+        <div class="n">Pro · Yearly <span class="pro">PRO</span></div>
+        <div class="p">$150 <small>CAD / year</small></div>
+        <ul><li>Everything in Pro</li><li>Just $12.50 a month</li><li>Covers the whole moving season — and July 1st</li><li>Unused days carry over when you renew</li></ul>
+        <a class="btn gold" href="mailto:justinhurbie@gmail.com?subject=Lead%20Sniper%20Pro%20%E2%80%94%20Yearly%20%28%24150%20CAD%29&amp;body=Hi%21%20I%27d%20like%20Lead%20Sniper%20Pro%2C%20yearly.%0A%0AMy%20browser%20code%20%28Lead%20Sniper%20%E2%86%92%20Settings%20%E2%86%92%20Lead%20Sniper%20Pro%29%3A%20%0A%0AI%27ll%20pay%20with%3A%20Bitcoin%20/%20Monero">Get Pro yearly</a>
+      </div>
+    </div>
+    <div class="paynote reveal"><span>Pay with</span><span class="coin"><i style="background:#F7931A">₿</i>Bitcoin</span><span class="coin"><i style="background:#FF6600">ɱ</i>Monero</span></div>
+    <div class="buy reveal">
+      <div><b>1 · Copy your browser code</b>In Lead Sniper: Settings → Lead Sniper Pro. It looks like <span style="font-family:ui-monospace,monospace">7K3M-Q9PX</span>.</div>
+      <div><b>2 · E-mail it to us</b>Say monthly or yearly. We reply with the amount and a payment address.</div>
+      <div><b>3 · Paste your key</b>Once payment confirms, your key arrives. Paste it in Lead Sniper — Autopilot unlocks.</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head center reveal"><span class="eyebrow">Questions</span><h2>Good questions.</h2></div>
+    <div class="faq">
+      <details class="reveal"><summary>Is it safe for my Facebook account?</summary><p>Lead Sniper reads pages the way you do, in your own logged-in browser, at a human pace — it never asks for your password. Finding leads and one-click replies are just you, faster. Autopilot posts from your account, and Facebook can limit accounts that post automatically, so Pro comes with hourly and daily limits, quiet hours, a wait between replies and a free Rehearsal mode. You decide how far to go.</p></details>
+      <details class="reveal"><summary>Does it really understand Québec French?</summary><p>Yes — it was built in Gatineau on real local group posts. It reads joual, franglais, missing accents and typos (“qqn aurait un truck”), and answers French posts in French.</p></details>
+      <details class="reveal"><summary>Where do my leads go? Is there a cloud?</summary><p>There's no cloud. Everything — posts, leads, replies, settings — stays in your browser on your computer. No account, no server, no AI service. Back it up to a file whenever you like.</p></details>
+      <details class="reveal"><summary>Is it only for movers?</summary><p>It's tuned for moving, pickup &amp; delivery, heavy items (pianos, safes, appliances) and junk removal. Turn each one on or off, add your own phrases and service areas.</p></details>
+      <details class="reveal"><summary>What happens when Pro ends?</summary><p>Autopilot pauses with a “Renew” button and you get a reminder three days before. Everything else keeps working, and your leads and settings stay. Renew early and the new days are added to the ones you have left.</p></details>
+      <details class="reveal"><summary>Can I try Pro first?</summary><p>Yes. Rehearsal mode is free forever and shows exactly what Autopilot would post. Want the real thing? <a href="mailto:justinhurbie@gmail.com?subject=Lead%20Sniper%20%E2%80%94%20free%207-day%20Pro%20trial&amp;body=Hi%21%20I%27d%20like%20to%20try%20Lead%20Sniper%20Pro%20for%207%20days.%0A%0AMy%20browser%20code%20%28Lead%20Sniper%20%E2%86%92%20Settings%20%E2%86%92%20Lead%20Sniper%20Pro%29%3A%20">Ask for a free 7-day trial key</a>.</p></details>
+      <details class="reveal"><summary>Why Bitcoin or Monero?</summary><p>Fast, private and the same from anywhere. Tell us your browser code and plan; we reply with the exact amount and an address, and your key arrives once the payment confirms.</p></details>
+      <details class="reveal"><summary>Which browsers and computers?</summary><p>Brave and Google Chrome on Mac, Windows or Linux, with Facebook in the browser. Phones aren't supported.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Stop scrolling. Start booking.</h2>
+    <p class="lede">The next “need movers Saturday” is being typed right now. Be the first one there.</p>
+    <div class="ctas"><a class="btn primary lg" href="https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip">Download free</a><a class="btn gold lg" href="#pricing">Get Pro</a></div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <span>© 2026 Lead Sniper · Made in Gatineau, Québec</span>
+  <span><a href="mailto:justinhurbie@gmail.com">justinhurbie@gmail.com</a> · Lead Sniper is not affiliated with Meta or Facebook.</span>
+</div></footer>
+
+<script>
+  // Fade sections in as they scroll into view.
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' }) : null;
+  document.querySelectorAll('.reveal').forEach((el) => io ? io.observe(el) : el.classList.add('in'));
+</script>
+</body>
+</html>
