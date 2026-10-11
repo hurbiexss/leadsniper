@@ -1,9 +1,16 @@
-**Lead Sniper 3.1 finds every request for your services in your Facebook groups — now 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.2 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it to unzip. Keep the folder somewhere permanent, like Documents.
 2. Open `brave://extensions` (or `chrome://extensions`), turn on **Developer mode**, click **Load unpacked** and pick the folder. Updating? Replace the old folder's files and click the reload arrow on the extension.
 3. On the welcome screen, enter your business name and your group links, then scroll Facebook.
+
+### New in 3.2: every screen speaks all 30 services
+- 📥 **Inbox:** each lead shows its service, and any job other than a move shows what's needed in the customer's own words (*"Laveuse ne vidange plus"*, *"Hot tub stopped heating"*), on Facebook and in your notifications too
+- ✍️ **Replies page:** preview the smart reply for each of your services in English and French; templates are listed by service, and **New template for…** starts one in that service's own voice. New `{job}` and `{area}` fill-ins
+- 🧭 **Group Hunter** searches where your services get asked for: moving groups for movers, recommendation and home-services groups for trades, parents' groups for babysitters and tutors
+- 📊 **Insights:** leads and jobs won for each service
+- 🧹 Replies for trades no longer borrow a mover's lines ("stairs don't scare us")
 
 ### New in 3.1
 - 🧰 **10 more services (30 in all):** 🏚️ Roofing · 🔥 Chimney sweeping · 🔑 Locksmith · 🏊 Pools & hot tubs · 💻 Computer & phone repair · 🧸 Childcare · 📚 Tutoring · 💇 Hair & beauty · 📸 Photography · 🧵 Sewing & alterations
