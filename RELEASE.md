@@ -1,9 +1,15 @@
-**Lead Sniper 3.4.1 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.5 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it to unzip. Keep the folder somewhere permanent, like Documents.
 2. Open `brave://extensions` (or `chrome://extensions`), turn on **Developer mode**, click **Load unpacked** and pick the folder. Updating? Replace the old folder's files and click the reload arrow on the extension.
 3. On the welcome screen, enter your business name and your group links, then scroll Facebook.
+
+### New in 3.5: handle more leads, faster
+- ☑️ **Several leads at once:** click **Select** (or shift-click a range of leads), tick the ones you want, and mark them all Replied, Won, Lost, Archive or Not a lead in one click — with Undo
+- ⏳ **No more blank screen:** the dashboard appears right away, with soft grey placeholders for the second it takes to read your leads
+- 🎨 **A colour for each service in Insights:** leads per day are stacked by service, with a legend, a breakdown when you point at a day, and a table view. A service keeps the same colour in every chart, in light and dark mode, and the colours stay easy to tell apart for colour-blind eyes
+- 📱 **Phone-sized windows:** the inbox's filters and tabs fit without spilling off the screen
 
 ### New in 3.4.1: design polish
 - 🎨 **Easier to read:** small grey text and the orange buttons now meet the accessibility contrast standard (WCAG AA) in light and dark mode, in the dashboard, the popup and on Facebook
