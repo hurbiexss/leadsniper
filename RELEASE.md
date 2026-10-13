@@ -1,9 +1,13 @@
-**Lead Sniper 3.4 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.4.1 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it to unzip. Keep the folder somewhere permanent, like Documents.
 2. Open `brave://extensions` (or `chrome://extensions`), turn on **Developer mode**, click **Load unpacked** and pick the folder. Updating? Replace the old folder's files and click the reload arrow on the extension.
 3. On the welcome screen, enter your business name and your group links, then scroll Facebook.
+
+### New in 3.4.1: design polish
+- 🎨 **Easier to read:** small grey text and the orange buttons now meet the accessibility contrast standard (WCAG AA) in light and dark mode, in the dashboard, the popup and on Facebook
+- 📥 **Clearer inbox:** each lead reads name → job (in orange) → post, and empty tabs (Maybe, Replied, Won) explain what will show up there
 
 ### New in 3.4: the Verifier, and tuning from a live test with 11 home services
 - 🔎 **The Verifier double-checks every automatic reply.** Before Autopilot posts, it re-reads the post for context: written by a person (not a business page), no ad, promotion, job-posting or for-sale wording, hiring rather than asking about prices, reviews or hours, in your area, nothing doubtful, not a flyer. If anything fails, the lead waits in your inbox, marked "Held for your look" with the reason. On past mistakes it holds 28 of 30 false leads, while letting 99% of real customers through
