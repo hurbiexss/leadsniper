@@ -1,9 +1,17 @@
-**Lead Sniper 3.8 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.8.1 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it to unzip. Keep the folder somewhere permanent, like Documents.
 2. Open `brave://extensions` (or `chrome://extensions`), turn on **Developer mode**, click **Load unpacked** and pick the folder. Updating? Replace the old folder's files and click the reload arrow on the extension.
 3. On the welcome screen, enter your business name and your group links, then scroll Facebook.
+
+### 3.8.1: reliability fixes from a full check of the app
+- 🔒 **Your clicks always stick:** archiving a lead, marking it won or replying while Lead Sniper re-reads your posts (after a settings change, an update or during a scan) can no longer be undone by it
+- 🤖 **Autopilot is safer:** a post can only ever be claimed once, even when two checks land at the same moment; it recognises comments from your own Facebook account (learned from your replies), so it won’t comment where you already answered by hand; and it only answers posts in groups you added — never posts Facebook’s feed shows from other groups
+- 📋 **Handled leads stay put:** jobs you replied to, won or lost stay in your tabs and in Insights even if you later turn their service off
+- 💾 **Restoring a backup** keeps the newer copy of each lead (a reply you sent after the backup stays sent) and no longer doubles your activity log
+- 🔁 **Scans:** a progress report can no longer overwrite the move to the next group; Facebook tabs update their lead banners right after you change a setting
+- 🧭 **Setup asks where you work,** for the far-away check and Group Hunter; Group Hunter’s summary talks about your services, not just moving
 
 ### New in 3.8: quick replies that sound like a person
 - 💬 **Short, natural replies** replace the long “smart” ones: their first name, one plain line for the job, and how to reach you — “Hi Marie, I can take care of the cleaning. Send me a message for a quote.” Nothing from their post is repeated back, no stacked “happy to…” lines, and emoji only if you want them
