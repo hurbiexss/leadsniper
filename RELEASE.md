@@ -1,9 +1,17 @@
-**Lead Sniper 3.6 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.7 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it to unzip. Keep the folder somewhere permanent, like Documents.
 2. Open `brave://extensions` (or `chrome://extensions`), turn on **Developer mode**, click **Load unpacked** and pick the folder. Updating? Replace the old folder's files and click the reload arrow on the extension.
 3. On the welcome screen, enter your business name and your group links, then scroll Facebook.
+
+### New in 3.7: replies in your own voice, and sharper on every service
+- 🙋 **“I” for jobs you do yourself:** handyman work, painting, repairs, appliances, auto, cleaning, tutoring and other one-person jobs now reply “I can take a look” / « Je peux vous aider » instead of “we”. Moving and crew jobs (renovation, roofing, trees) keep “we”. You can choose in Settings → Replies → Speak as
+- 🎯 **The right service, more often** — from a hand review of 391 posts from a live test: gutters and downspouts, shingles, phone screens, TV repair, remote starters, Tempo shelters, washer hookups, septic tanks, baseboards, snow removal and more are now recognized. When a post asks for a service you offer next to one you don’t (« déneigeur… et quelqu’un pour peinturer »), yours takes it
+- 🧹 **Fewer false leads:** “where can we drop off…?” questions, businesses asking for opinions, debt advice, mason jars (not masonry), contractors looking for subcontractors, “it’s fixed” updates, daycare announcements, animal-rescue appeals, photo-shoot location questions, and jobs in U.S. towns written like “Herrick IL”
+- 🌐 **Posts written in both languages** get a reply in the language they open with, with the item named in that language — never « votre refrigerator »
+- ✍️ **Replies that fit the job:** mounting a TV, staining a railing, getting jet skis ready for winter, hooking up a washer, moving a granite countertop
+- 👋 One-word usernames (“Frogeye23”) aren’t greeted by name
 
 ### New in 3.6: get around faster
 - 🔍 **Quick jump (Ctrl K, or ⌘ K on a Mac):** one box to find any lead by name or job, open any page or setting, or do things like "Scan my groups now" and "Dark mode". Also in the sidebar
