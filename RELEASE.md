@@ -1,9 +1,14 @@
-**Lead Sniper 3.7 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.8 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it to unzip. Keep the folder somewhere permanent, like Documents.
 2. Open `brave://extensions` (or `chrome://extensions`), turn on **Developer mode**, click **Load unpacked** and pick the folder. Updating? Replace the old folder's files and click the reload arrow on the extension.
 3. On the welcome screen, enter your business name and your group links, then scroll Facebook.
+
+### New in 3.8: quick replies that sound like a person
+- 💬 **Short, natural replies** replace the long “smart” ones: their first name, one plain line for the job, and how to reach you — “Hi Marie, I can take care of the cleaning. Send me a message for a quote.” Nothing from their post is repeated back, no stacked “happy to…” lines, and emoji only if you want them
+- 🔀 **Never copy-pasted:** each service has a few versions in English and French, mixed so comments posted close together never match (Lead Sniper now remembers your last 50 replies)
+- 🙋 One-person jobs still say “I”, crews say “we” (Settings → Replies → Speak as)
 
 ### New in 3.7: replies in your own voice, and sharper on every service
 - 🙋 **“I” for jobs you do yourself:** handyman work, painting, repairs, appliances, auto, cleaning, tutoring and other one-person jobs now reply “I can take a look” / « Je peux vous aider » instead of “we”. Moving and crew jobs (renovation, roofing, trees) keep “we”. You can choose in Settings → Replies → Speak as
