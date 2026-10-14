@@ -1,9 +1,19 @@
-**Lead Sniper 3.8.1 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.8.2 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it to unzip. Keep the folder somewhere permanent, like Documents.
 2. Open `brave://extensions` (or `chrome://extensions`), turn on **Developer mode**, click **Load unpacked** and pick the folder. Updating? Replace the old folder's files and click the reload arrow on the extension.
 3. On the welcome screen, enter your business name and your group links, then scroll Facebook.
+
+### 3.8.2: more fixes from a second full check
+- ✍️ **A reply you’re writing on Facebook is never wiped:** lead banners no longer redraw while their reply panel is open (a settings change or a re-check used to clear it, and your edits)
+- 💬 **Replies you type straight into Facebook count:** when your own comment shows under a lead, it’s marked replied — no more leads stuck in “To reply” because you answered without the Reply button
+- 🙋 **Your own posts are never leads** (“Looking for 2 helpers Saturday” that you posted yourself), and Autopilot never comments on them
+- 👤 **“Anonymous member” is many people:** replying to one anonymous post no longer blocks Autopilot from the others for a week, and “Not a lead” on one no longer hides another anonymous member’s request
+- 🗓️ **Old requests aren’t new leads:** a request already older than “Skip posts older than” when a scan first reads it is kept under All, without an alert or a badge
+- 📝 **Templates:** if none of your templates is for a lead’s kind of job (or its language), you get a quick reply — never another service’s template
+- 📄 **CSV export:** opens with accents intact in Excel, and a post starting with “=” can’t run as a formula
+- 🗺️ Changing Group Hunter’s areas re-checks what counts as “far away”; finishing setup re-checks posts read before it
 
 ### 3.8.1: reliability fixes from a full check of the app
 - 🔒 **Your clicks always stick:** archiving a lead, marking it won or replying while Lead Sniper re-reads your posts (after a settings change, an update or during a scan) can no longer be undone by it
