@@ -1,9 +1,16 @@
-**Lead Sniper 3.5 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.6 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it to unzip. Keep the folder somewhere permanent, like Documents.
 2. Open `brave://extensions` (or `chrome://extensions`), turn on **Developer mode**, click **Load unpacked** and pick the folder. Updating? Replace the old folder's files and click the reload arrow on the extension.
 3. On the welcome screen, enter your business name and your group links, then scroll Facebook.
+
+### New in 3.6: get around faster
+- 🔍 **Quick jump (Ctrl K, or ⌘ K on a Mac):** one box to find any lead by name or job, open any page or setting, or do things like "Scan my groups now" and "Dark mode". Also in the sidebar
+- 📅 **Your leads by day:** the inbox list has Today, Yesterday, Last 7 days and Last 30 days headings
+- ↕️ **"3 of 11" in every lead,** with up and down arrows to go to the next or previous lead without the list
+- 👥 **A clearer Groups page:** a badge for each group, its lead rate as a small bar, and a "Top group" tag on the one bringing you the most leads
+- ⏱️ **Undo messages show the time left,** and stay put while you point at them
 
 ### New in 3.5: handle more leads, faster
 - ☑️ **Several leads at once:** click **Select** (or shift-click a range of leads), tick the ones you want, and mark them all Replied, Won, Lost, Archive or Not a lead in one click — with Undo
