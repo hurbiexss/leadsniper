@@ -1,4 +1,4 @@
-**Lead Sniper 3.8.4 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.8.5 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it. You get a folder called **lead-sniper** (the files are right inside it — there's no other folder to look for). Move it somewhere permanent, like Documents.
@@ -7,6 +7,11 @@
 
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
+
+### 3.8.5: “Not for me” and a safer Autopilot
+- 🙅 **“Not for me” vs “Not a request”:** the ✕ on a lead’s banner in Facebook now asks which you mean. “Not for me” hides a real request you’re passing on (a $40 job, a service you don’t do) and teaches Lead Sniper nothing. “Not a request” is for posts where nobody is asking for help, and it teaches. The same two buttons are in the inbox
+- 🧠 **Replied means real:** “Not a request” on a post you already replied to only hides it, without teaching — and earlier clicks like that are un-taught, so the second opinion stops doubting requests like them
+- 🔎 **Autopilot needs more than one word:** when a single bare word is all that points to a job (“load” in a question about a beam), the post is held for your look instead of getting a comment. Every real moving request in your saved posts still passes
 
 ### 3.8.4: right comments on the right posts
 - 🧱 **A “load-bearing wall” isn’t a move:** “if the wall is not load bearing… have the wall removed” was read as loading a truck, and Autopilot commented on it. Wall removals are now renovation jobs (« enlever un mur porteur » too)
