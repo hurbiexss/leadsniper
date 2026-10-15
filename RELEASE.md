@@ -1,9 +1,15 @@
-**Lead Sniper 3.8.2 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.8.3 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
-1. Download **lead-sniper.zip** below and double-click it to unzip. Keep the folder somewhere permanent, like Documents.
-2. Open `brave://extensions` (or `chrome://extensions`), turn on **Developer mode**, click **Load unpacked** and pick the folder. Updating? Replace the old folder's files and click the reload arrow on the extension.
+1. Download **lead-sniper.zip** below and double-click it. You get a folder called **lead-sniper** (the files are right inside it — there's no other folder to look for). Move it somewhere permanent, like Documents.
+2. Open `brave://extensions` (or `chrome://extensions`), turn on **Developer mode**, click **Load unpacked** and pick the **lead-sniper** folder.
 3. On the welcome screen, enter your business name and your group links, then scroll Facebook.
+
+### Updating
+Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
+
+### 3.8.3: updates itself
+- 🔄 **No more reload button:** when its folder holds a newer version, Lead Sniper updates itself — as soon as you open the dashboard, or within a couple of minutes — never in the middle of a scan, a group hunt or an automatic reply. You get a notification, and the dashboard reopens where you were
 
 ### 3.8.2: more fixes from a second full check
 - ✍️ **A reply you’re writing on Facebook is never wiped:** lead banners no longer redraw while their reply panel is open (a settings change or a re-check used to clear it, and your edits)
