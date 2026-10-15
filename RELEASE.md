@@ -1,4 +1,4 @@
-**Lead Sniper 3.8.5 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.9 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it. You get a folder called **lead-sniper** (the files are right inside it — there's no other folder to look for). Move it somewhere permanent, like Documents.
@@ -7,6 +7,12 @@
 
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
+
+### New in 3.9: the Autopilot report
+- 🤖 **See what Autopilot did, every day:** a new **Autopilot** page lists each comment it posted (with exactly what it wrote) and each lead it held back for your look, with the reason. Pick today, yesterday or any of the last 7 days
+- ✋ **One click when it got one wrong:** “Shouldn’t have commented” asks whether nobody was asking for help (Lead Sniper learns from it) or it was a real request that just isn’t for you (hidden, nothing learned). On a held-back lead, “Reply now” or “Should have commented”. Lead Sniper never deletes a comment on Facebook — the post is one click away if you want to
+- 🔔 **End-of-day notification** when quiet hours start (or 9 PM): “3 comments posted · 1 lead held back for your look” — only on days Autopilot did something. Click it for a 10-second check. Turn it off in Settings → Automatic replies
+- 🔢 The menu shows how many comments Autopilot posted since you last looked
 
 ### 3.8.5: “Not for me” and a safer Autopilot
 - 🙅 **“Not for me” vs “Not a request”:** the ✕ on a lead’s banner in Facebook now asks which you mean. “Not for me” hides a real request you’re passing on (a $40 job, a service you don’t do) and teaches Lead Sniper nothing. “Not a request” is for posts where nobody is asking for help, and it teaches. The same two buttons are in the inbox
