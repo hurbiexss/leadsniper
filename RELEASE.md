@@ -1,4 +1,4 @@
-**Lead Sniper 3.8.3 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.8.4 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it. You get a folder called **lead-sniper** (the files are right inside it — there's no other folder to look for). Move it somewhere permanent, like Documents.
@@ -7,6 +7,12 @@
 
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
+
+### 3.8.4: right comments on the right posts
+- 🧱 **A “load-bearing wall” isn’t a move:** “if the wall is not load bearing… have the wall removed” was read as loading a truck, and Autopilot commented on it. Wall removals are now renovation jobs (« enlever un mur porteur » too)
+- 🚚 **Plain moving requests aren’t held back:** “Need two movers for loading and unloading… drop a comment or send me a text” was held for “a human look” by the second opinion. On your real posts its doubts about plain, direct requests were wrong every time, so now it only doubts posts that also read like an ad or a job posting
+- ✅ **“Update: fixed. Thank you all”** at the top of a post closes it; someone listing their experience and asking which companies are hiring is a job hunter, not a customer
+- 🎯 **Other services:** “help with drywall and insulation”, a dog walker asked for along with advice, snowblower and small-engine repairs, body work (« carrosserie »), and “help with some cleaning” are now found
 
 ### 3.8.3: updates itself
 - 🔄 **No more reload button:** when its folder holds a newer version, Lead Sniper updates itself — as soon as you open the dashboard, or within a couple of minutes — never in the middle of a scan, a group hunt or an automatic reply. You get a notification, and the dashboard reopens where you were
