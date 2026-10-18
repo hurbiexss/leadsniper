@@ -1,4 +1,4 @@
-**Lead Sniper 3.9 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.10 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it. You get a folder called **lead-sniper** (the files are right inside it — there's no other folder to look for). Move it somewhere permanent, like Documents.
@@ -7,6 +7,14 @@
 
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
+
+### 3.10: Autopilot only comments when someone is clearly hiring
+- 🛑 **Listings aren’t requests:** “Foam mattress, good condition. Thick. Need two strong people.” is someone giving a mattress away — the strong people are for whoever takes it. Posts that describe an item (its condition, a price, “free to whoever”, « bon état », « comme neuf »…) are now read as listings, and a “need two strong people” in them doesn’t make them a lead
+- ✅ **Proof of hiring before any automatic comment:** Autopilot now needs the post to ask someone to do a job — movers or a moving company, people to move, carry, load or deliver something, something of theirs to be moved, a quote for a move, or people with a route or pay. “Need two strong people for our tug of war team” is held for your look. On every labelled post we have, it would comment on none of the non-requests and still answer about 96% of real moving requests
+- 🧪 Measured honestly: a fresh set of tricky listings and requests, written before the fix, was scored once — the old rules would have commented on 14 of 25 listings
+- 🗣️ **One voice per comment:** a crew’s reply no longer starts with “we” and ends with “message me and I’ll…” — it’s “we… message us” throughout (« écrivez-nous »). Lines like “we do moves like this all the time” are gone
+- ✍️ **Better feedback:** “Shouldn’t have commented” now asks what was wrong — giving away or selling, an ad, not a job, a different kind of job, too old, or a real request that’s not for you — with a box to type what happened. It’s saved with the post
+- 🐛 « Recommandations pour déménageurs » was read as “our movers” (already booked) — fixed
 
 ### New in 3.9: the Autopilot report
 - 🤖 **See what Autopilot did, every day:** a new **Autopilot** page lists each comment it posted (with exactly what it wrote) and each lead it held back for your look, with the reason. Pick today, yesterday or any of the last 7 days
