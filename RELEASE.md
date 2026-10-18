@@ -1,4 +1,4 @@
-**Lead Sniper 3.10 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.10.1 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it. You get a folder called **lead-sniper** (the files are right inside it — there's no other folder to look for). Move it somewhere permanent, like Documents.
@@ -7,6 +7,10 @@
 
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
+
+### 3.10.1: the safety checks really run
+- 🔒 **Fix:** the Verifier’s two newest checks — proof of hiring, and “more than one word points to the job” — were dropped when a post’s analysis was saved, so inside the extension they never held anything back. They’re kept now, and Autopilot re-reads any post analysed by older rules before it comments
+- 🔁 Saved posts are re-read whenever the rules change — not only when Brave starts — so an update always reaches your whole inbox
 
 ### 3.10: Autopilot only comments when someone is clearly hiring
 - 🛑 **Listings aren’t requests:** “Foam mattress, good condition. Thick. Need two strong people.” is someone giving a mattress away — the strong people are for whoever takes it. Posts that describe an item (its condition, a price, “free to whoever”, « bon état », « comme neuf »…) are now read as listings, and a “need two strong people” in them doesn’t make them a lead
