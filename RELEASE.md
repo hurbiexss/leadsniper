@@ -1,4 +1,4 @@
-**Lead Sniper 3.10.1 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.10.2 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it. You get a folder called **lead-sniper** (the files are right inside it — there's no other folder to look for). Move it somewhere permanent, like Documents.
@@ -7,6 +7,11 @@
 
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
+
+### 3.10.2: fixes from a live test
+- 🚚 “Need two movers with a truck… must be available at noon tomorrow” was scored like a mover’s ad and fell under the Autopilot minimum — it’s a customer again
+- 🛏️ Giveaways like « … sans frais mais à ramasser », “available free for pickup” and “does anyone need a queen bed base?” are listings, not requests
+- 🎨 “A painter to work with us” is a job posting; « faire sabler… avant de le peinturer » isn’t a painting job; « quelqu’un sait c’est qui qui se promène avec un pickup? » is asking who someone is
 
 ### 3.10.1: the safety checks really run
 - 🔒 **Fix:** the Verifier’s two newest checks — proof of hiring, and “more than one word points to the job” — were dropped when a post’s analysis was saved, so inside the extension they never held anything back. They’re kept now, and Autopilot re-reads any post analysed by older rules before it comments
