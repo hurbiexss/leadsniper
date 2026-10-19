@@ -10,9 +10,9 @@
 | | |
 |---|---|
 | 🎯 **Spots it** | Only real customers. Competitors' ads, job posts and sale posts are skipped. |
-| ✍️ **Writes it** | A short, human reply in their language: their name, the job, your number and website. Another version in one click. |
+| ✍️ **Writes it** | A short, human reply in their language: their name, the job, your number, and your website on the jobs it fits. Another version in one click. |
 | 🤖 **Sends it** `PRO` | Posted while you're on a job, only when someone is clearly hiring, with limits, quiet hours and a free Rehearsal mode. |
-| 🧰 **30 services** | Moving, cleaning, handyman, painting, plumbing, electrical, heating & AC, roofing, snow, lawn, trees, chimneys, locksmiths, pools, auto, pets, computer repair, childcare, tutoring, hair & beauty, photography, sewing and more. Turn on only yours. |
+| 🧰 **30 services** | Moving, pickup & delivery, heavy items, junk removal, cleaning, handyman, painting, plumbing, electrical, heating & AC, roofing, snow removal, lawn & landscaping, tree service, chimney sweeping, locksmith, pools & hot tubs, auto repair & tires, pet care, computer & phone repair, childcare, tutoring, hair & beauty, photography, sewing & alterations and more. Turn on only yours. |
 | 🧭 **Group Hunter** | Finds local groups and ranks them by requests for your services. |
 | 🔒 **Private** | No account, no cloud. Everything stays in your browser. |
 

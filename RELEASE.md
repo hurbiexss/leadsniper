@@ -8,6 +8,10 @@
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
 
+### 3.11.1: the same names everywhere
+- 🏷️ Services go by their full names all through the dashboard — the inbox filters, Insights, the Replies page, Settings and the Autopilot report now say “Pickup & delivery”, “Heavy items” and “Snow removal”, as the Services page and the website do (only the Facebook bar keeps a short name for the six longest, where space is tight)
+- 🧭 “Group Hunter” is spelled the same in the menu as everywhere else
+
 ### New in 3.11: a cleaner dashboard that puts the edge in front of you
 - 🔥 **Today, at a glance:** the Inbox opens on how many requests are waiting, how many were posted in the last hour (the first good reply usually gets the job), how many are needed this week — and how your week compares to the last. One click replies to the newest
 - 💡 **Tips from your own leads:** when your customers post most, which group brings you the most work, and what Autopilot did today — each shown only when there’s enough data for it to be true
