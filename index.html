@@ -140,7 +140,7 @@ section.alt { background: var(--bg-2); }
 
 @media (max-width: 960px) {
   nav.top .links { display: none; } nav.top .btn { margin-left: auto; }
-  .hero .wrap, .flow, .prices { grid-template-columns: 1fr; }
+  .hero .wrap, .flow, .prices { grid-template-columns: minmax(0, 1fr); }
   .stats { grid-template-columns: repeat(3, auto); }
   .extras, .qa, .svcs { grid-template-columns: 1fr 1fr; }
   .stage { padding: 0; }
@@ -173,15 +173,15 @@ section.alt { background: var(--bg-2); }
       <div><b>EN + FR</b><span>joual &amp; typos</span></div>
       <div><b>4,500+</b><span>posts / second</span></div>
       <div><b>30</b><span>local services</span></div>
-      <div><b>2,600+</b><span>test posts passed</span></div>
+      <div><b>3,100+</b><span>test posts passed</span></div>
       <div><b>0</b><span>servers or cloud</span></div>
     </div>
   </div>
   <div class="stage">
-    <div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="assets/inbox.png" width="1440" height="940" alt="The Lead Sniper inbox: moving, cleaning and plumbing leads with score, job details and a ready reply"></div>
-    <div class="toast"><span class="badge ok">✓ 83</span><div>Auto-replied to Patrick<small>🚰 Plumbing · leak under the sink · Hull</small></div></div>
+    <div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="assets/inbox.png" width="1440" height="940" alt="The Lead Sniper inbox: six requests waiting, tips for today, the job at a glance and a ready reply"></div>
+    <div class="toast"><span class="badge ok">✓ 84</span><div>Auto-replied to Louis<small>❄️ Snow removal · Clear my driveway · Aylmer</small></div></div>
     <div class="post">
-      <div class="lsbar"><span class="badge">🎯 90</span><b>Moving lead</b><span class="s">4½ · no elevator · Hull → Aylmer · Jul 1</span></div>
+      <div class="lsbar"><span class="badge">🎯 90</span><b>Moving lead</b><span class="s">4½ · 2nd floor, no elevator · Hull → Aylmer · Jul 1</span></div>
       <div class="body"><b>Marie Tremblay</b>Looking for movers for July 1st, 4 1/2 in Hull going to Aylmer. 2nd floor, no elevator 🙏</div>
     </div>
   </div>
@@ -212,21 +212,21 @@ section.alt { background: var(--bg-2); }
     <div class="step">
       <div class="n"><i>2</i>Writes like you</div>
       <div class="orig"><b>Étienne:</b> Quelqu’un aurait un camion pour aller chercher un divan à Orléans demain?</div>
-      <div class="out"><span class="lang">FR</span>Allo Étienne! On peut aller chercher votre divan de Marketplace pour vous demain! Soumission et infos sur yourmovingco.ca — ou textez le 819-555-0142 🚚 — Your Moving Co.</div>
+      <div class="out"><span class="lang">FR</span>Bonjour Étienne! On peut aller chercher ça et vous le livrer. Envoyez-nous un message ou appelez au 819-555-0142 🙂 Plus d’infos sur yourmovingco.ca — Your Moving Co.</div>
       <div class="orig"><b>Julie:</b> Looking for a cleaning lady every two weeks for our condo in Aylmer!</div>
-      <div class="out"><span class="lang">EN</span>Hello Julie! We’d be happy to take care of the cleaning! We work in Aylmer all the time. Send me a message or call/text 819-555-0142 for a quick quote ✨ — Your Co.</div>
-      <p class="note">Their name, the job and the date, in the voice of each service, plus your number and website. Never the same twice.</p>
+      <div class="out"><span class="lang">EN</span>Hey Julie, I can help with your cleaning. You can reach me at 819-555-0142 or by message. — Your Co.</div>
+      <p class="note">Short and human, in their language: their name, the job, your number and website. One click for another version.</p>
     </div>
     <div class="step">
       <div class="n"><i>3</i>Sends it <span class="pro">PRO</span></div>
-      <div class="toast"><span class="badge ok">✓ 94</span><div>Auto-replied to Nathalie<small>3½ · Aylmer → Hull · Saturday</small></div></div>
-      <div class="chips"><span>🛡️ Hourly &amp; daily limits</span><span>🌙 Quiet hours</span><span>🙅 Never twice to anyone</span><span>⏸️ Pauses if unsure</span><span>🎭 Free Rehearsal</span></div>
-      <p class="note">Posts the moment a clear request appears — during scans or while you browse.</p>
+      <div class="toast"><span class="badge ok">✓ 93</span><div>Auto-replied to Nathalie<small>3½ · Aylmer → Hull · Saturday</small></div></div>
+      <div class="chips"><span>🛡️ Hourly &amp; daily limits</span><span>🌙 Quiet hours</span><span>🙅 Once a week per person</span><span>🤔 Leaves unclear posts to you</span><span>🎭 Free Rehearsal</span></div>
+      <p class="note">Comments during scans, only when someone is clearly hiring — and only after a second check of the post.</p>
     </div>
   </div>
   <div class="extras">
     <span>🧭 <b>Group Hunter</b> ranks local groups by requests for your services</span>
-    <span>⏱️ <b>Auto-scans</b> every 15 min, with desktop alerts</span>
+    <span>⏱️ <b>Auto-scans</b> as often as every 30 min, with desktop alerts</span>
     <span>📥 <b>Inbox</b> with shortcuts, Won/Lost and CSV export</span>
   </div>
 </div></section>
