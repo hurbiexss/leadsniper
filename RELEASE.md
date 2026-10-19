@@ -144,4 +144,4 @@ Download the new **lead-sniper.zip**, double-click it, and copy everything insid
 - ⏱️ Scheduled scans and desktop notifications
 - 🤖 **Pro Autopilot**: replies post themselves, with limits, quiet hours and a free Rehearsal mode
 
-**Pro:** $20 CAD/month or $150 CAD/year, paid in Bitcoin or Monero. See [the website](https://hurbiexss.github.io/leadsniper/#pricing) or e-mail [justinhurbie@gmail.com](mailto:justinhurbie@gmail.com) with your browser code.
+**Pro:** $20 CAD/month or $150 CAD/year. See [the website](https://hurbiexss.github.io/leadsniper/#pricing) or e-mail [justinhurbie@gmail.com](mailto:justinhurbie@gmail.com) with your browser code.

@@ -30,6 +30,6 @@ Unzip the [download](https://github.com/hurbiexss/leadsniper/releases/latest/dow
 |---|---|---|
 | Leads, auto-scans, 1-click replies, Group Hunter, Rehearsal | Everything in Free, plus Autopilot | Everything in Pro, at $12.50 a month |
 
-**How to buy:** e-mail your browser code (Settings → Lead Sniper Pro) to **[justinhurbie@gmail.com](mailto:justinhurbie@gmail.com)** → pay with Bitcoin or Monero → paste your key. A free 7-day trial is available on request.
+**How to buy:** e-mail your browser code (Settings → Lead Sniper Pro) to **[justinhurbie@gmail.com](mailto:justinhurbie@gmail.com)** → we’ll sort out payment by e-mail → paste your key. A free 7-day trial is available on request.
 
 <p align="center"><sub>Made in Gatineau, Québec · Not affiliated with Meta or Facebook.</sub></p>
