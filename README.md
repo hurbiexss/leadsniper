@@ -3,6 +3,8 @@
 <p align="center"><b>Spots every request for your services in your Facebook groups (moving, cleaning, plumbing, roofing, snow removal and 25 more), in English &amp; Québec French, and writes the reply for you.</b><br>
 <a href="https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip"><b>⬇️ Download free</b></a> · <a href="https://hurbiexss.github.io/leadsniper/">🌐 Website</a> · <a href="https://hurbiexss.github.io/leadsniper/#pricing">⭐ Get Pro</a></p>
 
+<p align="center"><a href="https://hurbiexss.github.io/leadsniper/#demo"><img src="assets/demo-poster.jpg" alt="Watch the 8-minute demo" width="86%"></a><br><a href="https://hurbiexss.github.io/leadsniper/#demo"><b>▶ Watch the 8-minute demo</b></a></p>
+
 ---
 
 ### Spot it. Write it. Send it.

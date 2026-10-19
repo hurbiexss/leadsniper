@@ -126,6 +126,8 @@ section.alt { background: var(--bg-2); }
 .svcs p { display: flex; flex-wrap: wrap; gap: 6px; }
 .svcs p span { white-space: nowrap; padding: 4px 10px; border-radius: 99px; background: var(--bg-3); font-size: 13px; color: var(--ink-2); }
 .svcs-note { text-align: center; margin-top: 18px; color: var(--ink-3); font-size: 14.5px; }
+.demo { max-width: 980px; margin: 0 auto; background: var(--night); }
+.demo video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--night); }
 .qa { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .qa div { font-size: 14px; color: var(--ink-2); }
 .qa b { display: block; color: var(--ink); font-size: 15px; margin-bottom: 4px; }
@@ -159,7 +161,7 @@ section.alt { background: var(--bg-2); }
 
 <nav class="top"><div class="wrap">
   <a class="brand" href="#"><img src="assets/logo.svg" width="30" height="30" alt="">Lead Sniper</a>
-  <div class="links"><a href="#services">Services</a><a href="#how">How it works</a><a href="#pricing">Pricing</a></div>
+  <div class="links"><a href="#demo">Demo</a><a href="#services">Services</a><a href="#how">How it works</a><a href="#pricing">Pricing</a></div>
   <a class="btn primary" href="https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip">Download free</a>
 </div></nav>
 
@@ -167,7 +169,7 @@ section.alt { background: var(--bg-2); }
   <div>
     <h1>Your next job was just posted. <span class="grad-text" style="white-space:nowrap">Answer it first.</span></h1>
     <p class="lede">Lead Sniper spots every request for your services in your Facebook groups — moving, cleaning, plumbing, roofing, snow removal and 25 more, in English &amp; Québec French — and writes the reply. <b>Pro</b> posts it while you're on a job.</p>
-    <div class="ctas"><a class="btn primary" href="https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip">Download free</a><a class="btn" href="#pricing">See pricing</a></div>
+    <div class="ctas"><a class="btn primary" href="https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip">Download free</a><a class="btn" href="#demo">▶ Watch the demo</a></div>
     <p class="small">Brave &amp; Chrome · No account · Free forever to find leads</p>
     <div class="stats">
       <div><b>EN + FR</b><span>joual &amp; typos</span></div>
@@ -186,6 +188,12 @@ section.alt { background: var(--bg-2); }
     </div>
   </div>
 </div></header>
+
+<section class="alt" id="demo"><div class="wrap">
+  <h2>See it work, start to finish.</h2>
+  <div class="frame demo"><video controls playsinline preload="none" poster="assets/demo-poster.jpg" width="1920" height="1080"><source src="assets/demo.mp4" type="video/mp4"><a href="assets/demo.mp4">Download the demo video</a></video></div>
+  <p class="svcs-note">8 minutes: setup, spotting leads, one-click replies, scans, Group Hunter and Autopilot. Filmed on a test page with invented posts.</p>
+</div></section>
 
 <section id="services"><div class="wrap">
   <h2>30 services. Turn on yours.</h2>
