@@ -1,4 +1,4 @@
-**Lead Sniper 3.10.2 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.11 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it. You get a folder called **lead-sniper** (the files are right inside it — there's no other folder to look for). Move it somewhere permanent, like Documents.
@@ -7,6 +7,14 @@
 
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
+
+### New in 3.11: a cleaner dashboard that puts the edge in front of you
+- 🔥 **Today, at a glance:** the Inbox opens on how many requests are waiting, how many were posted in the last hour (the first good reply usually gets the job), how many are needed this week — and how your week compares to the last. One click replies to the newest
+- 💡 **Tips from your own leads:** when your customers post most, which group brings you the most work, and what Autopilot did today — each shown only when there’s enough data for it to be true
+- 🗂️ **The job on every card:** when, where, what, budget and crew right on the lead, with a green dot on anything posted in the last hour — no more reading every post to find the good ones
+- 💬 **Your reply looks like the comment it becomes,** and “Won the job” gets a little celebration
+- ⚙️ **Settings, simplified:** one “Which leads you see” choice (More leads · Balanced · Only the surest) replaces three score sliders; “How deep” is Quick · Normal · Deep; Autopilot’s limits show as safety badges; reply options moved to the Replies page, next to the previews. Everything you could change before still works the same way
+- 🧭 The menu is grouped (Find work · Set up), Scan now and the next scan time live in the sidebar
 
 ### 3.10.2: fixes from a live test
 - 🚚 “Need two movers with a truck… must be available at noon tomorrow” was scored like a mover’s ad and fell under the Autopilot minimum — it’s a customer again
