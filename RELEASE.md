@@ -8,6 +8,9 @@
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
 
+### 3.11.2: the Pro window says what Pro really does
+- 📝 Its list now matches Autopilot today: replies during your scans, only when someone is clearly hiring and after a second check; an end-of-day report; limits, quiet hours, once a week per person, and unclear posts left to you. (“Also while you browse” is gone — it isn’t something you can turn on.)
+
 ### 3.11.1: the same names everywhere
 - 🏷️ Services go by their full names all through the dashboard — the inbox filters, Insights, the Replies page, Settings and the Autopilot report now say “Pickup & delivery”, “Heavy items” and “Snow removal”, as the Services page and the website do (only the Facebook bar keeps a short name for the six longest, where space is tight)
 - 🧭 “Group Hunter” is spelled the same in the menu as everywhere else
