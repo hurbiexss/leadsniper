@@ -8,6 +8,13 @@
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
 
+### 3.11.3: finds the trade jobs people describe in their own words
+- 🔎 **Fewer missed requests:** checked by hand against real posts from local groups with all 30 services on. Requests it used to miss are found now — “help with the water heater”, “needs a front wheel bearing replaced”, « coupe de griffes », “guitar lessons”, « la tonte de mon gazon », “remove the drywall in my basement”, “3 window crank repairs”… Of 380 real requests in those posts it used to miss 91; it misses none of them now, and false leads went from 18 to 1 (a U.S. post from a group nobody added, which Autopilot never answers)
+- ✅ **Closed posts stay closed:** “*FOUND*” at the top, “Found thanks”, “Update: it’s been taken care of” and an “Edit: done” note. Autopilot had commented on a “*FOUND*” post — it won’t now. (“I don’t need the pipes, just the muffler” leaves out a part; it doesn’t close the post)
+- 🛑 **Not customers:** holiday-rental and service ads, a daycare announcing an open spot, people looking for odd jobs, company job posts, shout-outs, lost-pet stories, someone collecting scrap metal, and “sorry if this is a basic question” advice
+- 🚚 A pickup far away brought back here (“get a pergola in Montréal and bring it here”) is a local job, and a business asking for help (a painter looking for a cleaning crew) is a customer
+- Your saved posts are re-read with the new rules after the update
+
 ### 3.11.2: the Pro window says what Pro really does
 - 📝 Its list now matches Autopilot today: replies during your scans, only when someone is clearly hiring and after a second check; an end-of-day report; limits, quiet hours, once a week per person, and unclear posts left to you. (“Also while you browse” is gone — it isn’t something you can turn on.)
 

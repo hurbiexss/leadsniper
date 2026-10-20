@@ -20,7 +20,7 @@
 
 <p align="center"><img src="assets/inbox.png" alt="The Lead Sniper inbox: requests waiting, tips for today, the job at a glance and a ready reply" width="92%"></p>
 
-**EN + FR** (joual &amp; typos too) · **4,500+** posts read per second · **3,100+** test posts passed · **0** servers
+**EN + FR** (joual &amp; typos too) · **4,300+** posts read per second · **4,500+** test posts passed · **0** servers
 
 ### Install in 2 minutes
 Unzip the [download](https://github.com/hurbiexss/leadsniper/releases/latest/download/lead-sniper.zip), open `brave://extensions` (or `chrome://extensions`), turn on **Developer mode**, click **Load unpacked** and pick the folder.
