@@ -1,4 +1,4 @@
-**Lead Sniper 3.11 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it comments for you.
+**Lead Sniper 3.11 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal comment ready in one click.** With Pro, it comments for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it. You get a folder called **lead-sniper** (the files are right inside it — there's no other folder to look for). Move it somewhere permanent, like Documents.
@@ -7,6 +7,10 @@
 
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
+
+### 3.11.5: comments, not replies
+- 💬 **Comments, not replies, everywhere:** the Replies page is now **Comments**, quick replies are **quick comments**, the Facebook bar's button says **Comment**, and the inbox has **To comment** and **Commented** (“I commented”). Your settings, templates and history are unchanged
+- 🎬 The demo videos show the new words
 
 ### 3.11.4: automatic comments, called what they are
 - 💬 **Automatic comments:** Autopilot posts comments under people's posts, so that's what it's called everywhere now — Settings, the inbox, the Autopilot page, the toolbar button, the Facebook bar (“✓ Auto-commented”) and the website. Nothing about how it works has changed
