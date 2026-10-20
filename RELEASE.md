@@ -1,4 +1,4 @@
-**Lead Sniper 3.11 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it replies for you.
+**Lead Sniper 3.11 finds every request for your services in your Facebook groups — 30 local services, from moving and cleaning to roofing, tutoring and childcare — in English and Québec French, and has a personal reply ready in one click.** With Pro, it comments for you.
 
 ### Install (2 minutes)
 1. Download **lead-sniper.zip** below and double-click it. You get a folder called **lead-sniper** (the files are right inside it — there's no other folder to look for). Move it somewhere permanent, like Documents.
@@ -7,6 +7,11 @@
 
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
+
+### 3.11.4: automatic comments, called what they are
+- 💬 **Automatic comments:** Autopilot posts comments under people's posts, so that's what it's called everywhere now — Settings, the inbox, the Autopilot page, the toolbar button, the Facebook bar (“✓ Auto-commented”) and the website. Nothing about how it works has changed
+- 🤖 **The Autopilot page only holds back what Autopilot would answer:** a lead in a job Autopilot isn't on for (say, renovation while it only answers moving) is listed under “Not for Autopilot” instead of “Held back for your look” — even when its score was low, or the job was turned off after it was skipped
+- 🎬 A new, shorter demo video on the website
 
 ### 3.11.3: finds the trade jobs people describe in their own words
 - 🔎 **Fewer missed requests:** checked by hand against real posts from local groups with all 30 services on. Requests it used to miss are found now — “help with the water heater”, “needs a front wheel bearing replaced”, « coupe de griffes », “guitar lessons”, « la tonte de mon gazon », “remove the drywall in my basement”, “3 window crank repairs”… Of 380 real requests in those posts it used to miss 91; it misses none of them now, and false leads went from 18 to 1 (a U.S. post from a group nobody added, which Autopilot never answers)
@@ -50,7 +55,7 @@ Download the new **lead-sniper.zip**, double-click it, and copy everything insid
 ### New in 3.9: the Autopilot report
 - 🤖 **See what Autopilot did, every day:** a new **Autopilot** page lists each comment it posted (with exactly what it wrote) and each lead it held back for your look, with the reason. Pick today, yesterday or any of the last 7 days
 - ✋ **One click when it got one wrong:** “Shouldn’t have commented” asks whether nobody was asking for help (Lead Sniper learns from it) or it was a real request that just isn’t for you (hidden, nothing learned). On a held-back lead, “Reply now” or “Should have commented”. Lead Sniper never deletes a comment on Facebook — the post is one click away if you want to
-- 🔔 **End-of-day notification** when quiet hours start (or 9 PM): “3 comments posted · 1 lead held back for your look” — only on days Autopilot did something. Click it for a 10-second check. Turn it off in Settings → Automatic replies
+- 🔔 **End-of-day notification** when quiet hours start (or 9 PM): “3 comments posted · 1 lead held back for your look” — only on days Autopilot did something. Click it for a 10-second check. Turn it off in Settings → Automatic comments
 - 🔢 The menu shows how many comments Autopilot posted since you last looked
 
 ### 3.8.5: “Not for me” and a safer Autopilot
@@ -65,7 +70,7 @@ Download the new **lead-sniper.zip**, double-click it, and copy everything insid
 - 🎯 **Other services:** “help with drywall and insulation”, a dog walker asked for along with advice, snowblower and small-engine repairs, body work (« carrosserie »), and “help with some cleaning” are now found
 
 ### 3.8.3: updates itself
-- 🔄 **No more reload button:** when its folder holds a newer version, Lead Sniper updates itself — as soon as you open the dashboard, or within a couple of minutes — never in the middle of a scan, a group hunt or an automatic reply. You get a notification, and the dashboard reopens where you were
+- 🔄 **No more reload button:** when its folder holds a newer version, Lead Sniper updates itself — as soon as you open the dashboard, or within a couple of minutes — never in the middle of a scan, a group hunt or an automatic comment. You get a notification, and the dashboard reopens where you were
 
 ### 3.8.2: more fixes from a second full check
 - ✍️ **A reply you’re writing on Facebook is never wiped:** lead banners no longer redraw while their reply panel is open (a settings change or a re-check used to clear it, and your edits)
@@ -116,14 +121,14 @@ Download the new **lead-sniper.zip**, double-click it, and copy everything insid
 - 📥 **Clearer inbox:** each lead reads name → job (in orange) → post, and empty tabs (Maybe, Replied, Won) explain what will show up there
 
 ### New in 3.4: the Verifier, and tuning from a live test with 11 home services
-- 🔎 **The Verifier double-checks every automatic reply.** Before Autopilot posts, it re-reads the post for context: written by a person (not a business page), no ad, promotion, job-posting or for-sale wording, hiring rather than asking about prices, reviews or hours, in your area, nothing doubtful, not a flyer. If anything fails, the lead waits in your inbox, marked "Held for your look" with the reason. On past mistakes it holds 28 of 30 false leads, while letting 99% of real customers through
+- 🔎 **The Verifier double-checks every automatic comment.** Before Autopilot posts, it re-reads the post for context: written by a person (not a business page), no ad, promotion, job-posting or for-sale wording, hiring rather than asking about prices, reviews or hours, in your area, nothing doubtful, not a flyer. If anything fails, the lead waits in your inbox, marked "Held for your look" with the reason. On past mistakes it holds 28 of 30 false leads, while letting 99% of real customers through
 - 🌐 **Your website and name only where they fit:** a site or business name made for one kind of work ("GatineauMoving.com") stays off your cleaning or plumbing replies; pick exactly which services show them, or give a service its own website (Settings → Replies)
 - ✨ **Polish:** a tidier inbox (services on one scrolling row, a post count, no needless "New" tags), even Services cards, a proper Group Hunter welcome, and the Verifier's verdict on every lead
 - 🤖 **Autopilot's minimum is now 75** (it was 80): most clear trade requests score 75–85, and the Verifier covers the close calls
 - 🎯 **More real customers found:** landlords hiring a handyman, "LF cleaning service", typos like "lookimg", "wondering if anyone is able to…", "DM me if you can help", French posts where *tire* means pull (not tires), and price questions like "how much would it cost to mount a TV?"
 - 🧹 **Fewer false alarms:** group welcome posts, page promotions full of hashtags, businesses pitching to contractors, "installer wanted" job ads, review requests about one contractor, and jobs far from your area (Halifax, Florida…), judged from your service areas and Group Hunter areas
 - 🧭 **Right service, every time:** duct and furnace cleaning → Heating & AC, washer gaskets → Appliance repair, and when a moving service is off, a trade you offer takes the post
-- 🤖 **Autopilot shows what it skips:** the Services page says which of your services Autopilot doesn't answer yet ("Answer all my services automatically"), and a skipped lead has a one-click fix
+- 🤖 **Autopilot shows what it skips:** the Services page says which of your services Autopilot doesn't answer yet ("Auto-comment on all my services"), and a skipped lead has a one-click fix
 - ⚡ Turning several services on in a row now re-checks your posts once, not once per click; no more "maybe" for a service you turned off
 
 ### New in 3.3: polish and a sharper eye
@@ -152,6 +157,6 @@ Download the new **lead-sniper.zip**, double-click it, and copy everything insid
 - ✍️ Smart replies written from each customer's own words, in their language
 - 🧭 Group Hunter: finds and ranks local groups by requests for your services
 - ⏱️ Scheduled scans and desktop notifications
-- 🤖 **Pro Autopilot**: replies post themselves, with limits, quiet hours and a free Rehearsal mode
+- 🤖 **Pro Autopilot**: comments post themselves, with limits, quiet hours and a free Rehearsal mode
 
 **Pro:** $20 CAD/month or $150 CAD/year. See [the website](https://hurbiexss.github.io/leadsniper/#pricing) or e-mail [justinhurbie@gmail.com](mailto:justinhurbie@gmail.com) with your browser code.
