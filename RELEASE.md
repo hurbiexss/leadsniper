@@ -8,6 +8,13 @@
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
 
+### 3.11.8: fewer wrong leads, more of the jobs people describe
+- 🛑 **Not customers:** “Anyone looking for a cleaner… please contact me” and « vous êtes à la recherche… contactez-nous » ads, a beautician introducing herself (« mes disponibilités pour vos rendez-vous »), a tutoring agency (« nos tuteurs », « 15 % de rabais »), and job seekers (“any… positions for”, “in need of cash work”, “willing to learn”)
+- 🗺️ **Toronto's suburbs and nearby towns are far away** — Scarborough, North York, Etobicoke, Markham, Newmarket, Bradford and more — for leads, for Autopilot's second check and for Group Hunter
+- 🔎 **Requests it used to miss:** « couper une branche », a dead tree « le couper », « un réparateur de réfrigérateur », an air exchanger or an electric fireplace to fix, shower wall panels, a kitchen island, « un ébéniste », « un abris auto », a lash tech, “which nail salon would you recommend?”, someone who picks up scrap metal, and a chaise longue to fetch across town
+- 🧭 **Group Hunter:** one request in a small sample can't make a group “the best” any more; what your scans read of a group still counts after you remove it; a private group you're not in isn't retried; Toronto-area, startup and freelancer groups sink; French towns are searched for « entrepreneur construction » (plain « entrepreneurs » found business owners' groups)
+- Your saved posts are re-read with the new rules after the update
+
 ### 3.11.7: Group Hunter searches where your work comes from
 - 🔎 **More groups like your best ones:** Group Hunter reads the names of your groups that brought 10+ requests this month — *handyman*, *contractors*, *Spotted*, *cash jobs*, *folks*… — and searches for more of that kind first, in your bigger towns (*Gatineau handyman*, *Ottawa contractors*). On real hunts, no search had found the groups that bring the most requests — their kinds weren't searched for
 - 🏘️ **Community groups in every town:** *communauté / community*, **Spotted** (Québec towns), *voisins / neighbours* and *entraide* — the searches that found the groups with real requests
