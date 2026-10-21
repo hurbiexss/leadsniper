@@ -8,6 +8,15 @@
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
 
+### 3.11.6: Group Hunter measures for you
+- 📏 **New finds get measured after your scans:** when a scan is done with your groups, it reads the newest posts of one or two promising public groups from Group Hunter's *New finds* (six a day at most) and counts their real requests — guesses turn into numbers without running a hunt. Read-only: nothing is saved to your inbox and it never comments there. Turn it off under *Measure new finds after each scan* on the Group Hunter page
+- ⏸️ **Groups that bring nothing get flagged:** when your scans have read 25+ posts of one of your groups and it brought under one request per week of reading, *Your groups* shows the count with **Pause scanning** (the Groups page's switch) and **Keep**. After a full week, the inbox says so too, with a link straight there
+- 🧭 **Your groups are told apart again:** a post cross-posted between groups (contractors do it all the time) had tied groups together, so posts could be credited to the wrong group. Each group now keeps only its own address, and the mix-ups are cleaned up on update. The inbox's “best group” tip, Insights and Group Hunter count each group's own posts again
+- 🤖 Autopilot's “only in your groups” check can no longer be passed by a group you never added
+- 🧭 **Group Hunter ranks better:** “Buy, Sell, Trade” groups aren't mistaken for trades groups, groups where businesses advertise sink to the bottom, a plain “Jobs” group is a job board, “Ontario…” and “…au Québec” groups count as province-wide, and names in 𝗳𝗮𝗻𝗰𝘆 letters are read
+- ⏱ **A hunt measures first:** it reads the best groups' newest posts before their About pages, and does fewer searches once it already knows hundreds of groups — so even a hunt stopped early has real numbers
+- 🧭 Group Hunter now knows which groups you're already in (from Facebook's Join / Visit button), and Facebook's standard “No promotions or spam” rule shows as *Business posts limited*, not *No business posts*
+
 ### 3.11.5: comments, not replies
 - 💬 **Comments, not replies, everywhere:** the Replies page is now **Comments**, quick replies are **quick comments**, the Facebook bar's button says **Comment**, and the inbox has **To comment** and **Commented** (“I commented”). Your settings, templates and history are unchanged
 - 🎬 The demo videos show the new words
