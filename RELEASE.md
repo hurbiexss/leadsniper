@@ -8,6 +8,12 @@
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
 
+### 3.11.7: Group Hunter searches where your work comes from
+- 🔎 **More groups like your best ones:** Group Hunter reads the names of your groups that brought 10+ requests this month — *handyman*, *contractors*, *Spotted*, *cash jobs*, *folks*… — and searches for more of that kind first, in your bigger towns (*Gatineau handyman*, *Ottawa contractors*). On real hunts, no search had found the groups that bring the most requests — their kinds weren't searched for
+- 🏘️ **Community groups in every town:** *communauté / community*, **Spotted** (Québec towns), *voisins / neighbours* and *entraide* — the searches that found the groups with real requests
+- 🛠️ **Your services choose the words:** moving and cash-jobs groups for movers, handyman and contractors groups for trades, home services for outdoor work, parents' groups for babysitters and tutors, dog owners' groups for pet sitters
+- 🧹 **Fewer wasted searches:** without Marketplace, no more giveaway (*à donner*, *free stuff*) searches — they found Marketplace groups — and *odd jobs* is gone (it found groups in other countries). *Chelsea* is searched as *Chelsea QC* and *Orléans* as *Orléans Ottawa*, so Chelsea FC and New Orleans stay out
+
 ### 3.11.6: Group Hunter measures for you
 - 📏 **New finds get measured after your scans:** when a scan is done with your groups, it reads the newest posts of one or two promising public groups from Group Hunter's *New finds* (six a day at most) and counts their real requests — guesses turn into numbers without running a hunt. Read-only: nothing is saved to your inbox and it never comments there. Turn it off under *Measure new finds after each scan* on the Group Hunter page
 - ⏸️ **Groups that bring nothing get flagged:** when your scans have read 25+ posts of one of your groups and it brought under one request per week of reading, *Your groups* shows the count with **Pause scanning** (the Groups page's switch) and **Keep**. After a full week, the inbox says so too, with a link straight there
