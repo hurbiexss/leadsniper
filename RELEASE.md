@@ -8,6 +8,13 @@
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
 
+### 3.11.12: scheduled scans that actually run, fewer wrong comments
+- ⏰ **Scheduled scans no longer stall:** a scheduled scan opens its window behind yours so it never grabs your keyboard, but a window that's covered is hidden from Facebook, so the scan sat waiting while the app said “Scanning”. Now it comes to the front once you've been away from the keyboard for 2 minutes (longer each time you send it back). The sidebar says **Scheduled scan waiting** with **Show the scan window**. A scan hidden for 30 minutes stops, so it never holds up the next one
+- 🛑 **A wrong comment fixed:** a carpet removal (“I will move all furniture”) read as a move. Now filed under the right service: a cat-sitting request (« je viens de déménager », was moving) and a handyman list with an old dishwasher to take out (was heavy items)
+- 🔎 **Requests it used to miss:** “Looking for Licensed and Insured Painters” (read as an ad), requests signed “Thanks for your recommendations!” or « Merci pour vos suggestions » (read as already solved), “wanted to get a quote”, a last-minute dog sitter, a brake job (« job de brake »), rust spots, a laptop screen, chimney bricks, a bricklayer, drum lessons, curtain hems, a fence section, wall moulding, reassembling a cabinet, gym equipment (a “Force USA” machine is a brand, not a job in the U.S.), a well pump, curb stoppers
+- Not customers: a seller of painting kits for daycares, a call-out to a driver who dropped a couch (« À la personne avec son VUS… »), contractors recruiting helpers (“Must have Working at Heights and WHMIS”, “framers, drywallers, mudders…”), someone offering odd jobs, a fundraiser's total
+- Your saved posts are re-read with the new rules after the update
+
 ### 3.11.10: a Dashboard, details per service, fewer wrong comments
 - 📊 **A Dashboard:** today at a glance (requests waiting, fresh, needed this week, your week, tips) now has its own page, with Insights below it. **The inbox is just your leads**, full height. Old Insights links open the Dashboard
 - 🏷️ **Each service can have its own name, phone and website** (Comments → What goes in each comment → *Different details for…*). Its comments use them; anything left empty uses your main details
