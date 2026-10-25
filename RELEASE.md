@@ -8,6 +8,16 @@
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
 
+### 3.11.10: a Dashboard, details per service, fewer wrong comments
+- 📊 **A Dashboard:** today at a glance (requests waiting, fresh, needed this week, your week, tips) now has its own page, with Insights below it. **The inbox is just your leads**, full height. Old Insights links open the Dashboard
+- 🏷️ **Each service can have its own name, phone and website** (Comments → What goes in each comment → *Different details for…*). Its comments use them; anything left empty uses your main details
+- 🧭 **Measuring a new find says so:** after your groups, while a scan reads one of Group Hunter's new finds, the scan window shows “Your groups are done — measuring a new find for Group Hunter” the whole time, with a Stop button. And it measures better finds: lost-and-found groups (« animaux perdus ou trouvés »), “chat groups” and pet-friendly rentals no longer pass for pet groups, and “Stuff for sale” groups count as buy & sell
+- 🤖 **Autopilot un-pauses itself when its comment turns up:** if Facebook didn't show a comment right away (Autopilot pauses to be safe) and Lead Sniper later sees it under the post, it's marked sent and automatic comments resume
+- 🛑 **Wrong comments fixed:** a repair (“the sink is detaching from the countertop… take up part of the deck”) was read as heavy items; a plumber request with a “drain assembly” was read as assembly; someone asking for moving boxes was a moving lead
+- 🔎 **Requests it used to miss:** a piano move (« recommandation de gens… pour déplacer »), “gutter compagnie”, “a business that cleans gutters”, a roof problem near the chimney, a spa that won't run, a pipefitter, a water filter, light fixtures, a sink that won't drain, soil to haul away
+- Not customers: a helper offering to join a project, a drywall company's “whether you're a contractor” ad, a student looking for an event to photograph, a holiday-card drive for educators
+- Your saved posts are re-read with the new rules after the update
+
 ### 3.11.8: fewer wrong leads, more of the jobs people describe
 - 🛑 **Not customers:** “Anyone looking for a cleaner… please contact me” and « vous êtes à la recherche… contactez-nous » ads, a beautician introducing herself (« mes disponibilités pour vos rendez-vous »), a tutoring agency (« nos tuteurs », « 15 % de rabais »), and job seekers (“any… positions for”, “in need of cash work”, “willing to learn”)
 - 🗺️ **Toronto's suburbs and nearby towns are far away** — Scarborough, North York, Etobicoke, Markham, Newmarket, Bradford and more — for leads, for Autopilot's second check and for Group Hunter
