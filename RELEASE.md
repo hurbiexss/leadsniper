@@ -8,6 +8,16 @@
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
 
+### 3.11.14: fixes from an app-wide check
+- 🙈 **A scan behind other windows no longer wastes groups:** while waiting for a group to load, or while measuring a new find for Group Hunter, a hidden window used to count as “couldn't load”. Now it waits until the window is on screen, like the reading already did. Time spent hidden no longer counts against a group's time limit, so a group isn't cut short when its window comes back
+- 🕐 **Ready for the clock change (Nov 1):** the inbox's *Today / Yesterday* headings, the Dashboard's 7-day bars, and “Yesterday at…” / “Wednesday at…” post times now count calendar days, not 24-hour blocks
+- 🛑 **A clearer hold reason:** “it doesn't clearly ask anyone to move, carry, load or deliver something” replaces a message that quoted an example (“need two strong people”) as if it came from the post
+- 👋 **Better greetings:** no more “Hi Membre!” (Facebook's “Membre 98”), “Hi Facebook”, “Hi Garage”, “Hi Hull” or “Hi ECO” for business pages. Those comments start with a plain “Hello”. A name typed in lowercase is greeted with a capital (“Jean”)
+- 🗣️ **One voice in every comment:** the built-in templates said “Our team can help… Send me a message and I'll…”. They say *us / we* throughout now, and copies you never edited update themselves. New templates match the opening line's voice. With *Speak as: I*, French comments no longer keep “ça nous ferait plaisir”. The pickup template reads right when the post names no item
+- 🔎 **Inbox search ignores accents:** “demenagement” finds « déménagement »
+- 📅 **Downloads use your local date:** a backup made at 9 PM isn't named after tomorrow, and the CSV shows local times (2026-10-25 19:30), not UTC
+- Small wording fixes: the *Scan automatically* help matches how scheduled scans work now; service cards say “leads in 30 days” (what they count), not “this month”
+
 ### 3.11.13: a Dashboard you can read at a glance
 - 📊 **Requests per day** is one colour in two shades: what got a comment and what's still waiting. It was up to eight colours stacked into slivers. Hover a day for its numbers and its top services
 - 🎯 **A filter for the whole page:** all services, a group like *Moving & hauling*, or one service. Click a service in *Requests by service* to see only it
