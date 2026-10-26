@@ -8,6 +8,10 @@
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
 
+### 3.11.15: what you teach it stays right
+- 🧠 **“Autopilot shouldn't have commented — a different kind of job” no longer teaches “not a request”.** It is a request, just for another service, so it's hidden like *not for me* and nothing is learned. Before, it also hid later posts from the same person as “looks like a post you marked Not a request”. Posts you already marked this way are corrected on update
+- 🔗 **More group links work:** `fb.com/groups/…` and Facebook's link wrapper (`l.facebook.com/l.php?u=…`). A *Share* link (`facebook.com/share/g/…`) now says what to do (open it and copy the group's address, or use *Add this group* in the popup) instead of just “not a group link”
+
 ### 3.11.14: fixes from an app-wide check
 - 🙈 **A scan behind other windows no longer wastes groups:** while waiting for a group to load, or while measuring a new find for Group Hunter, a hidden window used to count as “couldn't load”. Now it waits until the window is on screen, like the reading already did. Time spent hidden no longer counts against a group's time limit, so a group isn't cut short when its window comes back
 - 🕐 **Ready for the clock change (Nov 1):** the inbox's *Today / Yesterday* headings, the Dashboard's 7-day bars, and “Yesterday at…” / “Wednesday at…” post times now count calendar days, not 24-hour blocks
