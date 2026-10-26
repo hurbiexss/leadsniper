@@ -8,6 +8,15 @@
 ### Updating
 Download the new **lead-sniper.zip**, double-click it, and copy everything inside the new **lead-sniper** folder over the files in your old one (the folder shown under *Lead Sniper → Details → Loaded from* at `brave://extensions`). Then just open the Lead Sniper dashboard: it notices the new version and updates itself — no reload button to find. (From 3.8.3 on, it also checks its folder every couple of minutes.)
 
+### 3.11.13: a Dashboard you can read at a glance
+- 📊 **Requests per day** is one colour in two shades: what got a comment and what's still waiting. It was up to eight colours stacked into slivers. Hover a day for its numbers and its top services
+- 🎯 **A filter for the whole page:** all services, a group like *Moving & hauling*, or one service. Click a service in *Requests by service* to see only it
+- 💡 **Every card ends with a takeaway and a link to act on it:** how many requests got a comment and how fast, which service brings the most and how many Autopilot answers, your best group (and the quiet ones), and how many requests your auto-scan hours catch
+- ⏱️ **Time to comment** shows Autopilot's and yours side by side, and leads marked won or lost days later no longer count as slow comments
+- 🕒 **When requests get posted** is two clear charts, by hour (with your auto-scan hours shaded) and by day. It counts only posts whose time Lead Sniper read. Posts with no time used to be counted at the moment a scan saw them, which made an 11 PM spike out of a first scan, and the old “your customers post most on…” tip came from that
+- Best groups lists your own groups. Cross-posts and groups you've removed are folded into one row
+- Hovering a bar itself now shows its numbers (before, only the empty space above a bar did)
+
 ### 3.11.12: scheduled scans that actually run, fewer wrong comments
 - ⏰ **Scheduled scans no longer stall:** a scheduled scan opens its window behind yours so it never grabs your keyboard, but a window that's covered is hidden from Facebook, so the scan sat waiting while the app said “Scanning”. Now it comes to the front once you've been away from the keyboard for 2 minutes (longer each time you send it back). The sidebar says **Scheduled scan waiting** with **Show the scan window**. A scan hidden for 30 minutes stops, so it never holds up the next one
 - 🛑 **A wrong comment fixed:** a carpet removal (“I will move all furniture”) read as a move. Now filed under the right service: a cat-sitting request (« je viens de déménager », was moving) and a handyman list with an old dishwasher to take out (was heavy items)
